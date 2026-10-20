@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMS Spam Robustness</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>SMS Spam Robustness</h1>
+    <p><a href="https://github.com/JonasChenJusFox/NLP">GitHub repository</a></p>
+
+    <section>
+      <h2>Message input</h2>
+      <label for="message">English SMS message</label>
+      <textarea id="message" maxlength="2000" spellcheck="false" rows="5" placeholder="Enter a message"></textarea>
+      <p id="count">0 characters</p>
+      <div class="examples">
+        Examples:
+        <button type="button" data-example="spam">Spam</button>
+        <button type="button" data-example="ham">Ham</button>
+        <button type="button" data-example="protected">URLs and phone numbers</button>
+      </div>
+      <p>
+        <label for="method">Modification</label>
+        <select id="method">
+          <option value="substitution">Character substitution: free → fr€e</option>
+          <option value="punctuation">Punctuation insertion: free → f.r.e.e</option>
+          <option value="repetition">Character repetition: free → freee</option>
+        </select>
+      </p>
+      <p>
+        <label for="strength">Proportion of eligible words: <span id="strength-value">50%</span></label>
+        <input id="strength" type="range" min="1" max="3" value="2">
+      </p>
+      <button type="button" id="generate">Apply</button>
+      <button type="button" id="reset">Reset</button>
+      <p id="status" role="status" aria-live="polite">Seed: 42. URLs, email addresses and phone numbers are preserved.</p>
+    </section>
+
+    <section>
+      <h2>Text comparison</h2>
+      <p id="change-count">No results yet.</p>
+      <div class="text-grid">
+        <article><h3>Original</h3><p id="original-text">—</p></article>
+        <article><h3>Modified</h3><p id="perturbed-text">—</p></article>
+        <article><h3>Normalized</h3><p id="normalized-text">—</p></article>
+      </div>
+      <details>
+        <summary>Normalization log</summary>
+        <p>Uses a small built-in vocabulary. Ambiguous words are left unchanged.</p>
+        <ul id="records"><li>No results yet.</li></ul>
+      </details>
+    </section>
+
+    <section>
+      <h2>Model comparison</h2>
+      <p>Models are not connected.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Model</th><th>Original prediction</th><th>Modified prediction</th></tr></thead>
+          <tbody>
+            <tr><td>A: Word TF-IDF + Logistic Regression</td><td>Not available</td><td>Not available</td></tr>
+            <tr><td>B: Character TF-IDF + Logistic Regression</td><td>Not available</td><td>Not available</td></tr>
+            <tr><td>C: Normalization + Word TF-IDF + Logistic Regression</td><td>Not available</td><td>Not available</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

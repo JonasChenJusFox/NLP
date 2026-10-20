@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 24px;
+  color: #222;
+}
+
+main { max-width: 1000px; margin: auto; }
+section { margin: 28px 0; }
+label { display: block; }
+textarea { width: 100%; box-sizing: border-box; font: inherit; }
+button, select { font: inherit; margin: 4px 4px 4px 0; }
+input[type="range"] { width: 240px; max-width: 100%; }
+.text-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+article { border: 1px solid #ccc; padding: 12px; min-width: 0; }
+article h3 { margin-top: 0; }
+article p { white-space: pre-wrap; overflow-wrap: anywhere; }
+mark { background: #fff0a6; }
+.normalized-mark { background: #dcefd5; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+li { overflow-wrap: anywhere; }
+
+@media (max-width: 700px) {
+  body { margin: 16px; }
+  .text-grid { grid-template-columns: 1fr; }
+}
