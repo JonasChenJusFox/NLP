@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "word_ngram_range": [1, 2],
+  "char_ngram_range": [3, 5],
+  "word_max_features": 30000,
+  "char_max_features": 60000,
+  "tfidf_min_df": 2,
+  "normalizer_min_df": 2,
+  "protect_content": true,
+  "lr_c_values": [0.5, 1.0, 2.0],
+  "decision_thresholds": [0.4, 0.5, 0.6],
+  "max_iter": 1000,
+  "max_changed_words": 1
+}

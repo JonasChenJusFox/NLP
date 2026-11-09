@@ -31,10 +31,7 @@
           <option value="repetition">Character repetition: free → freee</option>
         </select>
       </p>
-      <p>
-        <label for="strength">Proportion of eligible words: <span id="strength-value">50%</span></label>
-        <input id="strength" type="range" min="1" max="3" value="2">
-      </p>
+      <p>Each condition changes at most one eligible word per message.</p>
       <button type="button" id="generate">Apply</button>
       <button type="button" id="reset">Reset</button>
       <p id="status" role="status" aria-live="polite">Seed: 42. URLs, email addresses and phone numbers are preserved.</p>
@@ -50,21 +47,22 @@
       </div>
       <details>
         <summary>Normalization log</summary>
-        <p>Uses a small built-in vocabulary. Ambiguous words are left unchanged.</p>
+        <p>Uses only the training vocabulary. Ambiguous words, likely names and abbreviations are left unchanged.</p>
         <ul id="records"><li>No results yet.</li></ul>
       </details>
     </section>
 
     <section>
       <h2>Model comparison</h2>
-      <p>Models are not connected.</p>
+      <p id="model-status" aria-live="polite">Apply a change to compare the trained models.</p>
       <div class="table-wrap">
         <table>
           <thead><tr><th>Model</th><th>Original prediction</th><th>Modified prediction</th></tr></thead>
           <tbody>
-            <tr><td>A: Word TF-IDF + Logistic Regression</td><td>Not available</td><td>Not available</td></tr>
-            <tr><td>B: Character TF-IDF + Logistic Regression</td><td>Not available</td><td>Not available</td></tr>
-            <tr><td>C: Normalization + Word TF-IDF + Logistic Regression</td><td>Not available</td><td>Not available</td></tr>
+            <tr><td>Majority baseline</td><td id="majority-original" data-prediction>—</td><td id="majority-modified" data-prediction>—</td></tr>
+            <tr><td>A: Word TF-IDF + Logistic Regression</td><td id="A-original" data-prediction>—</td><td id="A-modified" data-prediction>—</td></tr>
+            <tr><td>B: Character TF-IDF + Logistic Regression</td><td id="B-original" data-prediction>—</td><td id="B-modified" data-prediction>—</td></tr>
+            <tr><td>C: Normalization + Word TF-IDF + Logistic Regression</td><td id="C-original" data-prediction>—</td><td id="C-modified" data-prediction>—</td></tr>
           </tbody>
         </table>
       </div>

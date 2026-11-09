@@ -1,65 +1,12 @@
-/* Browser-only prototype. Replace the demo vocabulary with training vocabulary
-   when integrating the Python normalizer; never learn from user/test input. */
+/* Transformations and models share the Python backend's frozen training vocabulary. */
 const examples = {
   spam: 'Congratulations! Claim your free prize now. Call 07700900123 to collect your reward.',
   ham: 'Are you free for coffee tomorrow? Please call me after work.',
   protected: 'Your free trial is ready. Visit https://example.com/free or call +1 212-555-0199. Email hello@example.com.'
 };
-const vocabulary = new Set('congratulations claim your free prize now call to collect reward are you for coffee tomorrow please me after work trial is ready visit or email hello meeting see at the win cash urgent reply text stop thanks good home today offer'.split(' '));
-const substitutions = { a: '4', e: '€', i: '1', o: '0', s: '$' };
-const reverse = { '4': 'a', '€': 'e', '1': 'i', '0': 'o', '$': 's' };
 const $ = id => document.getElementById(id);
+let pending = null;
 
-// Protected spans are tokenized first, so their internal words never change.
-function tokenize(text) {
-  const pattern = /https?:\/\/[^\s]+|www\.[^\s]+|[\w.+-]+@[\w.-]+\.[a-z]{2,}|\+?\d[\d ()-]{5,}\d|[a-z4€10$]+(?:\.[a-z4€10$]+)*|[^a-z4€10$]/gi;
-  return (text.match(pattern) || []).map(value => ({
-    value,
-    protected: /^(?:https?:\/\/|www\.)/i.test(value) || value.includes('@') || /^\+?\d[\d ()-]{5,}\d$/.test(value),
-    word: /^[a-z4€10$]+(?:\.[a-z4€10$]+)*$/i.test(value) && /[a-z]/i.test(value)
-  }));
-}
-function seededRandom(seed) {
-  return () => { seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0; return seed / 4294967296; };
-}
-function perturb(text, method, strength, seed = 42) {
-  const random = seededRandom(seed);
-  const tokens = tokenize(text);
-  const eligible = tokens.map((token, index) => ({ token, index })).filter(({ token }) => !token.protected && /^[a-z]{3,}$/i.test(token.value) && (method !== 'substitution' || /[aeios]/i.test(token.value)));
-  // Deterministic shuffle chooses an exact proportion of eligible words.
-  for (let i = eligible.length - 1; i > 0; i--) { const j = Math.floor(random() * (i + 1)); [eligible[i], eligible[j]] = [eligible[j], eligible[i]]; }
-  const selected = new Set(eligible.slice(0, Math.ceil(eligible.length * strength)).map(item => item.index));
-  return tokens.map((token, index) => {
-    let output = token.value;
-    if (selected.has(index)) {
-      if (method === 'substitution') output = output.replace(/[aeios]/i, letter => substitutions[letter.toLowerCase()]);
-      if (method === 'punctuation') output = [...output].join('.');
-      if (method === 'repetition') output += output.at(-1);
-    }
-    return { ...token, output, changed: output !== token.value };
-  });
-}
-function normalize(text) {
-  const records = [];
-  const tokens = tokenize(text).map(token => {
-    let output = token.value;
-    if (token.protected) records.push(`Protected, unchanged: ${token.value}`);
-    else if (token.word && !vocabulary.has(token.value.toLowerCase())) {
-      const mapped = token.value.toLowerCase().replace(/[4€10$]/g, char => reverse[char]).replace(/\./g, '');
-      let candidates = new Set([mapped]);
-      // Remove one duplicate at a time; retain only known, unambiguous words.
-      for (let i = 1; i < mapped.length; i++) if (mapped[i] === mapped[i - 1]) candidates.add(mapped.slice(0, i) + mapped.slice(i + 1));
-      candidates = [...candidates].filter(word => vocabulary.has(word));
-      if (candidates.length === 1) {
-        output = candidates[0];
-        if (/^[A-Z]/.test(token.value)) output = output[0].toUpperCase() + output.slice(1);
-        records.push(`Vocabulary match: ${token.value} → ${output}`);
-      } else records.push(`${candidates.length ? 'Ambiguous candidates' : 'No vocabulary match'}, unchanged: ${token.value}`);
-    }
-    return { ...token, output, changed: output !== token.value };
-  });
-  return { tokens, records };
-}
 function renderTokens(id, tokens, normalized = false) {
   const target = $(id);
   target.replaceChildren();
@@ -70,36 +17,105 @@ function renderTokens(id, tokens, normalized = false) {
     target.append(node);
   }
 }
+
 function clearResults() {
   for (const id of ['original-text', 'perturbed-text', 'normalized-text']) $(id).textContent = '—';
   $('change-count').textContent = 'No results yet.';
-  const li = document.createElement('li'); li.textContent = 'No results yet.'; $('records').replaceChildren(li);
+  const li = document.createElement('li');
+  li.textContent = 'No results yet.';
+  $('records').replaceChildren(li);
+  document.querySelectorAll('[data-prediction]').forEach(cell => { cell.textContent = '—'; });
+  $('model-status').textContent = 'Apply a change to compare the trained models.';
 }
+
 function updateInput() {
+  if (pending) pending.abort();
+  pending = null;
+  $('generate').disabled = false;
   $('count').textContent = `${$('message').value.length} characters`;
   clearResults();
-  $('status').textContent = 'Seed: 42. URLs, email addresses and phone numbers are preserved.';
+  $('status').textContent = 'Seed: 42. At most one eligible word changes. URLs, email addresses and numbers are preserved.';
 }
-function run() {
+
+async function run() {
   const text = $('message').value;
-  if (!text.trim()) { clearResults(); $('status').textContent = 'Enter an English message first.'; $('message').focus(); return; }
-  const strength = [0.25, 0.5, 1][Number($('strength').value) - 1];
-  const perturbed = perturb(text, $('method').value, strength);
-  const normalized = normalize(perturbed.map(token => token.output).join(''));
-  $('original-text').textContent = text;
-  renderTokens('perturbed-text', perturbed);
-  renderTokens('normalized-text', normalized.tokens, true);
-  const changed = perturbed.filter(token => token.changed).length;
-  const restored = normalized.tokens.filter(token => token.changed).length;
-  $('change-count').textContent = `${changed} words modified; ${restored} words normalized.`;
-  $('status').textContent = changed ? `Modified ${changed} words. Seed: 42.` : 'No eligible English words for this modification. Text unchanged.';
-  $('records').replaceChildren(...(normalized.records.length ? normalized.records : ['No changes needed.']).map(record => { const li = document.createElement('li'); li.textContent = record; return li; }));
+  if (!text.trim()) {
+    clearResults();
+    $('status').textContent = 'Enter an English message first.';
+    $('message').focus();
+    return;
+  }
+  if (pending) pending.abort();
+  const controller = new AbortController();
+  pending = controller;
+  clearResults();
+  $('generate').disabled = true;
+  $('status').textContent = 'Running models…';
+  try {
+    const response = await fetch('/api/analyze', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text, method: $('method').value, seed: 42 }),
+      signal: controller.signal
+    });
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({}));
+      throw new Error(typeof error.detail === 'string' ? error.detail : 'The service could not process this message.');
+    }
+    const result = await response.json();
+    if (pending !== controller) return;
+    $('original-text').textContent = result.original_text;
+    renderTokens('perturbed-text', result.modified.tokens);
+    renderTokens('normalized-text', result.normalized.tokens, true);
+    const restored = result.normalized.tokens.filter(token => token.changed).length;
+    $('change-count').textContent = `${result.modified.changed_word_count} word modified; ${restored} words normalized.`;
+    $('status').textContent = result.modified.changed
+      ? 'Modified one word. Seed: 42.'
+      : 'No eligible English words for this change. Text unchanged.';
+    const records = result.normalized.records.map(record => {
+      if (record.reason === 'vocabulary_match') return `${record.original} → ${record.output} (training vocabulary)`;
+      if (record.reason === 'protected') return `Protected, unchanged: ${record.original}`;
+      if (record.reason === 'ambiguous') return `Ambiguous, unchanged: ${record.original} (${record.candidates.join(', ')})`;
+      return `No vocabulary match, unchanged: ${record.original}`;
+    });
+    $('records').replaceChildren(...(records.length ? records : ['No changes needed.']).map(record => {
+      const li = document.createElement('li');
+      li.textContent = record;
+      return li;
+    }));
+    for (const [system, predictions] of Object.entries(result.predictions)) {
+      for (const version of ['original', 'modified']) {
+        const prediction = predictions[version];
+        $(`${system}-${version}`).textContent = `${prediction.label} (spam score: ${prediction.score.toFixed(3)})`;
+      }
+    }
+    $('model-status').textContent = `Model version: ${result.model_id}. Scores are estimated spam probabilities; each model uses its development-selected threshold.`;
+  } catch (error) {
+    if (error.name !== 'AbortError' && pending === controller) {
+      clearResults();
+      $('status').textContent = error instanceof TypeError
+        ? 'Cannot reach the backend. Open this demo through the running backend service.'
+        : error.message;
+    }
+  } finally {
+    if (pending === controller) {
+      pending = null;
+      $('generate').disabled = false;
+    }
+  }
 }
-document.querySelectorAll('[data-example]').forEach(button => button.addEventListener('click', () => { $('message').value = examples[button.dataset.example]; updateInput(); }));
+
+document.querySelectorAll('[data-example]').forEach(button => button.addEventListener('click', () => {
+  $('message').value = examples[button.dataset.example];
+  updateInput();
+}));
 $('message').addEventListener('input', updateInput);
 $('method').addEventListener('change', updateInput);
-$('strength').addEventListener('input', () => { $('strength-value').textContent = ['25%', '50%', '100%'][Number($('strength').value) - 1]; updateInput(); });
 $('generate').addEventListener('click', run);
-$('reset').addEventListener('click', () => { $('message').value = examples.spam; $('method').value = 'substitution'; $('strength').value = '2'; $('strength-value').textContent = '50%'; updateInput(); });
+$('reset').addEventListener('click', () => {
+  $('message').value = examples.spam;
+  $('method').value = 'substitution';
+  updateInput();
+});
 $('message').value = examples.spam;
 updateInput();
