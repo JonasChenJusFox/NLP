@@ -1,0 +1,20 @@
+{
+  "input_splits_sha256": "1637d5ed1ad6d2ce2b5d37d7fcf9e27aea4ea5bba7c06d1a39349ea7ee5f4964",
+  "decisions_sha256": "99f4cb214d528bffcfc54ad307d720743a03f9723dc775fc712100dac06a62f2",
+  "policy": "Quarantine this complete mixed-label training group due to missing context; preserve raw text and original labels; retain all dev/test partitions unchanged. Do not infer truth from majority labels.",
+  "reviewer": "Codex (AI-assisted adjudication; user delegated judgment)",
+  "reviewed_rows": 37,
+  "original_label_counts": {
+    "spam": 36,
+    "ham": 1
+  },
+  "common_suffix_count": 1,
+  "missing_evidence": [
+    "recipient consent",
+    "sender-recipient relationship",
+    "per-record source/collection context"
+  ],
+  "scope": "Only group 921353ecb6fb06ecd438 was semantically adjudicated; other non-ASCII/control flags are descriptive and do not establish label errors.",
+  "user_annotation_id": "8111f793-cdf3-4adb-b383-5d17da152739",
+  "independent_second_review": "Agreed: quarantine all 37 due to missing consent/contact/source context; do not majority-vote relabel."
+}

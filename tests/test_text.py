@@ -52,6 +52,18 @@ def test_conservative_names_abbreviations_and_ambiguity(normalizer):
     assert result["records"][0]["reason"] == "ambiguous"
 
 
+def test_numeric_ordinals_are_not_treated_as_letter_substitutions():
+    fitted = ConservativeNormalizer().fit(["ist ath info free", "ist ath info free"])
+    text = "1st 2nd 3rd 4th 11th 21st 101st"
+    result = fitted.normalize(text)
+    assert result["text"] == text
+    assert all(record["reason"] == "protected" for record in result["records"])
+    # Supported obfuscations containing a digit still receive vocabulary-backed recovery.
+    assert fitted.transform(["1nfo fr€e"]) == ["info free"]
+    unprotected = ConservativeNormalizer(protect_content=False).fit(["ist ath", "ist ath"])
+    assert unprotected.transform(["1st 4th"]) == ["ist ath"]
+
+
 def test_vocabulary_does_not_learn_from_prediction(normalizer):
     vocabulary = normalizer.vocabulary_.copy()
     assert normalizer.transform(["unseenwordd"]) == ["unseenwordd"]

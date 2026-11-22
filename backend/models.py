@@ -103,7 +103,7 @@ def metrics(labels, predicted):
 
 def load_splits(path):
     from backend.prepare import validate_splits
-    frame = pd.read_csv(path, dtype=str, keep_default_na=False)
+    frame = pd.read_csv(path, dtype=str, keep_default_na=False, engine="python")
     validate_splits(frame)
     return frame
 

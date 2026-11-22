@@ -1,0 +1,141 @@
+{
+  "commit": "a0889f36fb59e23a7f853a6932485d93d18b8afc",
+  "count": 15,
+  "notebooks": [
+    {
+      "cells": 19,
+      "code_cells": 19,
+      "executed_by_importer": false,
+      "file": "Code/ELMo.ipynb",
+      "markdown_cells": 0,
+      "sha256": "7924478b4ed73fa0b147f50fc6e072b762168e09487181f77751fd523ec6cdd0",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/ELMo.ipynb"
+    },
+    {
+      "cells": 50,
+      "code_cells": 41,
+      "executed_by_importer": false,
+      "file": "Code/Ensemble.ipynb",
+      "markdown_cells": 9,
+      "sha256": "5d92382bd7371246bdca679c9a841ce535cdc9123246d5a9ae5fdfd366d9fb78",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/Ensemble.ipynb"
+    },
+    {
+      "cells": 26,
+      "code_cells": 20,
+      "executed_by_importer": false,
+      "file": "Code/LSTM_BiLSTM_CNN.ipynb",
+      "markdown_cells": 6,
+      "sha256": "0fcefa56a450ce5cd5348670c1ca3034e3aac51d2a1da6d39c08a2909517bd69",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/LSTM_BiLSTM_CNN.ipynb"
+    },
+    {
+      "cells": 4,
+      "code_cells": 4,
+      "executed_by_importer": false,
+      "file": "Code/OCR_image_text.ipynb",
+      "markdown_cells": 0,
+      "sha256": "eeaef672f54ac537e0178466396d1af32b52c92363a4d689bc1b93ab94df9b3d",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/OCR_image_text.ipynb"
+    },
+    {
+      "cells": 19,
+      "code_cells": 19,
+      "executed_by_importer": false,
+      "file": "Code/OCSVM_Semantic.ipynb",
+      "markdown_cells": 0,
+      "sha256": "ea2fc809ead7f5ace32150929a45d9b0b4392802dbd093c6f15ffb45432ec93b",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/OCSVM_Semantic.ipynb"
+    },
+    {
+      "cells": 4,
+      "code_cells": 4,
+      "executed_by_importer": false,
+      "file": "Code/OCSVM_TFIDF.ipynb",
+      "markdown_cells": 0,
+      "sha256": "41e9fe7505f384c3596707fb283b12ba70c17dc23266a8303964d364e60f0ee4",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/OCSVM_TFIDF.ipynb"
+    },
+    {
+      "cells": 15,
+      "code_cells": 15,
+      "executed_by_importer": false,
+      "file": "Code/PU_Semantic.ipynb",
+      "markdown_cells": 0,
+      "sha256": "b021f07faf407aac6fb07366184c5a8c77f778e9fe8a7e2b0f1d1af16445e800",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/PU_Semantic.ipynb"
+    },
+    {
+      "cells": 3,
+      "code_cells": 3,
+      "executed_by_importer": false,
+      "file": "Code/PU_TFIDF.ipynb",
+      "markdown_cells": 0,
+      "sha256": "28b7c0c8cdd5154d20c22d299e6cb26b8f71d214a4d596ff0f1679b70ba3445b",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/PU_TFIDF.ipynb"
+    },
+    {
+      "cells": 7,
+      "code_cells": 7,
+      "executed_by_importer": false,
+      "file": "Code/SimpleTransformers_.ipynb",
+      "markdown_cells": 0,
+      "sha256": "dd05f12d76bf2e9703f140e1a5c214080afb40694a7251eaf92a2d7ba47b6cf9",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/SimpleTransformers_.ipynb"
+    },
+    {
+      "cells": 54,
+      "code_cells": 37,
+      "executed_by_importer": false,
+      "file": "Code/TCN.ipynb",
+      "markdown_cells": 17,
+      "sha256": "01eaf50ac3b6253e1cbf2c3daeafac7de552df3c90b2f442688169fb63fa6860",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/TCN.ipynb"
+    },
+    {
+      "cells": 11,
+      "code_cells": 11,
+      "executed_by_importer": false,
+      "file": "Code/TCSVM_Semantic.ipynb",
+      "markdown_cells": 0,
+      "sha256": "fdb0f41cf70678aed120f0f16d3da6879c15fd16dfcab60ad48e7bae21fd99a7",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/TCSVM_Semantic.ipynb"
+    },
+    {
+      "cells": 6,
+      "code_cells": 6,
+      "executed_by_importer": false,
+      "file": "Code/TCSVM_TFIDF.ipynb",
+      "markdown_cells": 0,
+      "sha256": "40dcb250acae2220910a5a1e06541d0faa8a87a5802cc86bb84ec2b850086a6e",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/TCSVM_TFIDF.ipynb"
+    },
+    {
+      "cells": 18,
+      "code_cells": 17,
+      "executed_by_importer": false,
+      "file": "Code/fastText.ipynb",
+      "markdown_cells": 1,
+      "sha256": "4d35eef85ed17180bd9fb1745f0b6030703d0c42fa52b8edb8d910182a94c60d",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/fastText.ipynb"
+    },
+    {
+      "cells": 30,
+      "code_cells": 30,
+      "executed_by_importer": false,
+      "file": "Code/feature_analysis.ipynb",
+      "markdown_cells": 0,
+      "sha256": "0fc58e4a5dda741befff6a19b0d0f25dd6d14a38091c5425c16ebad32484a17b",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/feature_analysis.ipynb"
+    },
+    {
+      "cells": 13,
+      "code_cells": 10,
+      "executed_by_importer": false,
+      "file": "Code/textAttack.ipynb",
+      "markdown_cells": 3,
+      "sha256": "dda06e76318f78205debad16ab0fdd012e806eb9d147ce3a7f80dc43295a998e",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/textAttack.ipynb"
+    }
+  ]
+}

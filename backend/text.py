@@ -98,6 +98,7 @@ class ConservativeNormalizer(BaseEstimator, TransformerMixin):
         # tokens are possible names/abbreviations, including sentence starts.
         return self.protect_content and (
             any(c.isupper() for c in value) or "'" in value or "’" in value
+            or bool(re.fullmatch(r"\d+(?:st|nd|rd|th)", value, re.I))
             or len(re.findall(r"\d", value)) > 1 or bool(re.search(r"[2356789]", value))
         )
 

@@ -1,0 +1,156 @@
+{
+  "commit": "a0889f36fb59e23a7f853a6932485d93d18b8afc",
+  "examples": 77,
+  "labels_available": false,
+  "punny_or_punycode": "Upstream labels are retained; these names do not establish RFC Punycode encoding.",
+  "tactics": {
+    "charswap": 16,
+    "hybrid": 15,
+    "paraphrasing": 17,
+    "punny_or_punycode": 14,
+    "spacing": 15
+  },
+  "use": "Unreviewed supplementary cases; excluded from main splits.",
+  "workbooks": [
+    {
+      "examples": 12,
+      "file": "Data/adversarial_examples_evaluation/Key Messages_Examples.xlsx",
+      "sha256": "404530a2dc3a96e2c8c2a75eb11c834041a67afbde4d09d8eeb0d8191e2daf6b",
+      "sheets": [
+        {
+          "examples": 12,
+          "header_row": 2,
+          "sheet": "Examples",
+          "tactics": {
+            "charswap": 3,
+            "hybrid": 2,
+            "paraphrasing": 3,
+            "punny_or_punycode": 2,
+            "spacing": 2
+          }
+        }
+      ],
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Data/adversarial_examples_evaluation/Key%20Messages_Examples.xlsx"
+    },
+    {
+      "examples": 10,
+      "file": "Data/adversarial_examples_evaluation/OOPSpam_Examples.xlsx",
+      "sha256": "3a2a6c683cc9d5e85c2c2f37d243177e1abf7b8f7af890b60120c02781f3dd51",
+      "sheets": [
+        {
+          "examples": 10,
+          "header_row": 2,
+          "sheet": "Examples",
+          "tactics": {
+            "charswap": 2,
+            "hybrid": 2,
+            "paraphrasing": 2,
+            "punny_or_punycode": 2,
+            "spacing": 2
+          }
+        }
+      ],
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Data/adversarial_examples_evaluation/OOPSpam_Examples.xlsx"
+    },
+    {
+      "examples": 10,
+      "file": "Data/adversarial_examples_evaluation/Plino_Examples.xlsx",
+      "sha256": "19115906bf711c946e4035177cf42ab6437afc37ecd6daa76e7a99b6df499e11",
+      "sheets": [
+        {
+          "examples": 10,
+          "header_row": 2,
+          "sheet": "Examples",
+          "tactics": {
+            "charswap": 2,
+            "hybrid": 2,
+            "paraphrasing": 2,
+            "punny_or_punycode": 2,
+            "spacing": 2
+          }
+        }
+      ],
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Data/adversarial_examples_evaluation/Plino_Examples.xlsx"
+    },
+    {
+      "examples": 13,
+      "file": "Data/adversarial_examples_evaluation/SMS Shield_Examples.xlsx",
+      "sha256": "651afd4258419d4808019dc022b601b7aa365db1a7610a001150c2d9866f672d",
+      "sheets": [
+        {
+          "examples": 13,
+          "header_row": 2,
+          "sheet": "Examples",
+          "tactics": {
+            "charswap": 3,
+            "hybrid": 3,
+            "paraphrasing": 3,
+            "punny_or_punycode": 2,
+            "spacing": 2
+          }
+        }
+      ],
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Data/adversarial_examples_evaluation/SMS%20Shield_Examples.xlsx"
+    },
+    {
+      "examples": 10,
+      "file": "Data/adversarial_examples_evaluation/TM Check_Examples.xlsx",
+      "sha256": "b311faecb21a1d8b1c220b589d413296c023cec4664b246be87fcee497980ae4",
+      "sheets": [
+        {
+          "examples": 10,
+          "header_row": 2,
+          "sheet": "Examples",
+          "tactics": {
+            "charswap": 2,
+            "hybrid": 2,
+            "paraphrasing": 2,
+            "punny_or_punycode": 2,
+            "spacing": 2
+          }
+        }
+      ],
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Data/adversarial_examples_evaluation/TM%20Check_Examples.xlsx"
+    },
+    {
+      "examples": 10,
+      "file": "Data/adversarial_examples_evaluation/VeroSMS_Examples.xlsx",
+      "sha256": "d6b9ab991e4042cea3c380033baf11e412917def9489c986798eef33d13a3f28",
+      "sheets": [
+        {
+          "examples": 10,
+          "header_row": 2,
+          "sheet": "Examples",
+          "tactics": {
+            "charswap": 2,
+            "hybrid": 2,
+            "paraphrasing": 2,
+            "punny_or_punycode": 2,
+            "spacing": 2
+          }
+        }
+      ],
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Data/adversarial_examples_evaluation/VeroSMS_Examples.xlsx"
+    },
+    {
+      "examples": 12,
+      "file": "Data/adversarial_examples_evaluation/Zyla_Examples.xlsx",
+      "sha256": "2b42317596df0d9c4c2bcf0b19132a05a2168abd4ad99d70698bbde8eb7081c3",
+      "sheets": [
+        {
+          "examples": 12,
+          "header_row": 2,
+          "sheet": "Examples",
+          "tactics": {
+            "charswap": 2,
+            "hybrid": 2,
+            "paraphrasing": 3,
+            "punny_or_punycode": 2,
+            "spacing": 3
+          }
+        }
+      ],
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Data/adversarial_examples_evaluation/Zyla_Examples.xlsx"
+    }
+  ]
+}

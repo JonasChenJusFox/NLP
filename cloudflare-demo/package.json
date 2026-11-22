@@ -1,0 +1,11 @@
+{
+  "name": "sms-spam-robustness-cloudflare",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "validate": "node scripts/validate-artifact.mjs",
+    "test:api": "node --test tests/worker.test.mjs",
+    "deploy:cloudflare": "npx --yes wrangler@4.166.0 deploy"
+  }
+}

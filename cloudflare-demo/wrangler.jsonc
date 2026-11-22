@@ -1,0 +1,17 @@
+{
+  // Native Cloudflare deployment. Authentication and account selection are
+  // handled by Wrangler; no account IDs or tokens are stored in this file.
+  "name": "sms-spam-robustness-demo",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2026-11-22",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "nlpsms.cc", "custom_domain": true }
+  ],
+  // scripts/build.mjs already emits a self-contained Worker ES module.
+  "no_bundle": true,
+  "find_additional_modules": false,
+  "build": {
+    "command": "node scripts/build.mjs"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "model_id": "9439f39e3b9e7f45",
+  "source_joblib_sha256": "86d79ff9f8ad7cd0dfb146c3bc62d057e0a80633bccb5417759f251c3167cd35",
+  "export_sha256": "62fbdf4e4a5dbc64c6fa99324887e0e38657d174708d86a1147947097ed48b97",
+  "bytes": 4251094,
+  "parameters": {
+    "A": {
+      "idf_float64_le_sha256": "ccb7b47845f53347acb9c3c15992637ea80683072f54b11499005e10dbc426da",
+      "coefficient_float64_le_sha256": "f03b54bcfced04502109aa5d9340a9b6eb1219c02d88a00687eb1475bca6e54f",
+      "feature_count": 30000
+    },
+    "B": {
+      "idf_float64_le_sha256": "c16c723b82e5239bf790d2bdd5b3a472466e38267dbfc1fcc8a099193323881b",
+      "coefficient_float64_le_sha256": "5f4c452f0a6f8d53922b37438918bb3ae351d91b974c74979438573e87e908ea",
+      "feature_count": 60000
+    },
+    "C": {
+      "idf_float64_le_sha256": "9742b744e78ac29d88df7142f64aa7cf0026bbdb6cd79f5221bfccb0a82cbde6",
+      "coefficient_float64_le_sha256": "383780b32575f28f8127704eb72fbba0b2b87b707ec950a87115ea3094737a34",
+      "feature_count": 30000
+    }
+  },
+  "normalizer_vocabulary_words": 44189,
+  "fixture_rows": 400,
+  "fixtures_sha256": "01768d9608c5b2e4b69ae03adc3b429a51cc0f816367a9f3aa3b29180000e9af",
+  "float_format": "IEEE754 Float64 little-endian, base64",
+  "new_training": false
+}

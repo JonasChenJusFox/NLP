@@ -1,0 +1,164 @@
+{
+  "executed_notebooks": false,
+  "source_root": "data/raw/spstudy/Code",
+  "notebooks": [
+    {
+      "file": "ELMo.ipynb",
+      "purpose": "TF1 ELMo embeddings plus Dense binary classifier",
+      "input_output": "Colab super_combine.csv -> elmo-model.h5/output2.csv; later reads missing output2b.csv",
+      "reuse": "Literature only",
+      "caveats": "TF-GPU1.15/Keras2.3; uninstall commands; row slicing 52588/52589:65736; LabelEncoder mapping needs inspection",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/ELMo.ipynb"
+    },
+    {
+      "file": "Ensemble.ipynb",
+      "purpose": "CNN plus BiGRU fusion with random/static/trainable Word2Vec embeddings",
+      "input_output": "Missing super23_train.csv/test.csv and GoogleNews vectors -> cda7/8/9.csv",
+      "reuse": "Optional model reference",
+      "caveats": "Tokenizer fits train only; no groups/dev; EarlyStopping monitors val_accuracy without validation data",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/Ensemble.ipynb"
+    },
+    {
+      "file": "LSTM_BiLSTM_CNN.ipynb",
+      "purpose": "LSTM/BiLSTM/CNN/GloVe CNN comparison",
+      "input_output": "Missing super23.csv/glove.6B.100d.txt -> output1/2/3/4.csv",
+      "reuse": "Optional model reference",
+      "caveats": "Ordinary 80/20 split; test reused for validation and EarlyStopping; aggressive punctuation/stopword/nonalpha removal; no group split",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/LSTM_BiLSTM_CNN.ipynb"
+    },
+    {
+      "file": "OCR_image_text.ipynb",
+      "purpose": "Tesseract OCR of SMS screenshots",
+      "input_output": "Missing spam22.zip/images -> spam22.csv",
+      "reuse": "Useful only for future image collection",
+      "caveats": "No labels or manual OCR correction; system Tesseract/Pillow required",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/OCR_image_text.ipynb"
+    },
+    {
+      "file": "OCSVM_Semantic.ipynb",
+      "purpose": "Mean Word2Vec/GloVe vectors plus OneClassSVM",
+      "input_output": "Missing super23.csv/vectors -> predictions and confusion metrics",
+      "reuse": "Do not integrate",
+      "caveats": "Cell12 overwrites train slice with full docs_vectors; cell14 test_size=1 trains almost all rows; cell16 tests overlapping full-data slice. OneClassSVM ignores y. Old DataFrame.append",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/OCSVM_Semantic.ipynb"
+    },
+    {
+      "file": "OCSVM_TFIDF.ipynb",
+      "purpose": "Spam-only TF-IDF plus OneClassSVM; active unigram",
+      "input_output": "Missing super23.csv; train37816:65736/test0:37815 -> confusion matrix/accuracy",
+      "reuse": "Pipeline fit/transform idea only",
+      "caveats": "Training maps 0 to -1; reloaded test labels remain 0/1 while predictions are -1/1; no groups/dev; aggressive cleaning",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/OCSVM_TFIDF.ipynb"
+    },
+    {
+      "file": "PU_Semantic.ipynb",
+      "purpose": "Mean Word2Vec/GloVe plus bagged PU RandomForest",
+      "input_output": "Missing super23.csv/baggingPU/vectors -> classification metrics",
+      "reuse": "Future incomplete-label research only",
+      "caveats": "No reproducible resampling seed; row-based split; hidden-positive intent in comment is not implemented in active semantic code; old pandas/gensim APIs",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/PU_Semantic.ipynb"
+    },
+    {
+      "file": "PU_TFIDF.ipynb",
+      "purpose": "Bigram TF-IDF plus bagged PU; hide300 positive labels",
+      "input_output": "Missing super23.csv/baggingPU -> classification metrics",
+      "reuse": "Future semi-supervised extension only",
+      "caveats": "TF-IDF fits train and transforms test, but no group/dev split, random sampling unseeded, hidden_size300 fixed",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/PU_TFIDF.ipynb"
+    },
+    {
+      "file": "SimpleTransformers_.ipynb",
+      "purpose": "Active RoBERTa; commented BERT/DistilBERT/XLM-R alternatives",
+      "input_output": "Missing super23_train.csv/test.csv; downloaded models -> eval results",
+      "reuse": "Literature/optional extension",
+      "caveats": "First cell recursively deletes outputs; forces CUDA; early stopping configured but no development evaluation passed to train_model",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/SimpleTransformers_.ipynb"
+    },
+    {
+      "file": "TCN.ipynb",
+      "purpose": "Temporal convolution network with random/static/trainable Word2Vec",
+      "input_output": "Missing super23_train/test/legacy.csv, vectors, keras-tcn -> cdar7/5/6.csv",
+      "reuse": "Optional model reference",
+      "caveats": "Tokenizer fits train; no groups/dev; val_accuracy stopping lacks validation data; dynamic arm uses a different legacy test file",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/TCN.ipynb"
+    },
+    {
+      "file": "TCSVM_Semantic.ipynb",
+      "purpose": "Mean pretrained Word2Vec/GloVe plus binary SVC",
+      "input_output": "Missing super23.csv/vectors -> metrics",
+      "reuse": "Optional representation reference",
+      "caveats": "Row slices train37816:65736/test0:37815; test_size1 inner split; embeddings overwrite each other; dropped OOV rows; old pandas/gensim",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/TCSVM_Semantic.ipynb"
+    },
+    {
+      "file": "TCSVM_TFIDF.ipynb",
+      "purpose": "Word TF-IDF plus binary SVC; active trigram",
+      "input_output": "Missing super23.csv -> train/test classification reports",
+      "reuse": "Train fit/test transform and metrics ideas only",
+      "caveats": "Train37816:65736/test0:37815 without grouping/dev; aggressive symbol/stopword/nonalpha removal destroys perturbation evidence; not LogisticRegression",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/TCSVM_TFIDF.ipynb"
+    },
+    {
+      "file": "fastText.ipynb",
+      "purpose": "Compile fastText CLI and supervised classifier",
+      "input_output": "Missing Colab super23_lbl.csv/output.csv -> __label__ format/model/predictions",
+      "reuse": "Optional lightweight model reference",
+      "caveats": "Head52588/tail13148 split without groups/dev; C++ build; final metrics rely on separate manual prediction file; string label formatting assumptions",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/fastText.ipynb"
+    },
+    {
+      "file": "feature_analysis.ipynb",
+      "purpose": "Length/tokens/emoticons/symbols/URLs/phones/emails/caps/keywords/spelling/readability/wordcloud/CDF",
+      "input_output": "Missing spam_overall.csv/spam_words.csv/super_evolution.csv/punny1.xlsx -> feature CSVs/readability PDF",
+      "reuse": "Most useful: local read-only audit features and review flags",
+      "caveats": "URL heuristic counts any bit/goog substring; caps counts runs not words; Text cleaned value overwritten by char-joined raw text; undefined messages17/23; dictionary and non-English filtering would misjudge SMS slang/names; vocabulary choices use train/dev only",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/feature_analysis.ipynb"
+    },
+    {
+      "file": "textAttack.ipynb",
+      "purpose": "Embedding/EDA augmentation and CharSwap perturbation",
+      "input_output": "Missing test.csv -> output_1.csv/eda.csv/printed variants",
+      "reuse": "Supplementary taxonomy only",
+      "caveats": "50percent word budget differs from main one-word budget; no fixed seed/group/protected spans; semantic changes may invalidate labels; never follow comment advising modification of system codecs.py",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/textAttack.ipynb"
+    }
+  ],
+  "scripts": [
+    {
+      "file": "language_filtering_langdetect.py",
+      "purpose": "Keep langdetect=en rows",
+      "reuse": "Manual language-review flag only",
+      "caveats": "Windows paths; semicolon then comma splitting corrupts CSV; short SMS/multilingual slang unreliable; no deterministic seed; bare except silently drops rows; append duplicates",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/language_filtering_langdetect.py"
+    },
+    {
+      "file": "language_filtering_google.py",
+      "purpose": "Remote Google language detection and English filtering",
+      "reuse": "Do not integrate as default cleaning",
+      "caveats": "Windows paths; sends SMS text to external service; unofficial network dependency; incorrect comma splitting; append duplicates; no local reproducible audit",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/language_filtering_google.py"
+    },
+    {
+      "file": "sms_automation.py",
+      "purpose": "Selenium bulk SMS sending using Google Messages",
+      "reuse": "Unrelated to offline classification and cleaning; do not execute",
+      "caveats": "Real login/recipient/send side effects; hardcoded XPath/contact/sleeps",
+      "source_url": "https://github.com/smspamresearch/spstudy/blob/a0889f36fb59e23a7f853a6932485d93d18b8afc/Code/sms_automation.py"
+    }
+  ],
+  "credentials": "No hardcoded API keys found in source; remote Google detection needs network.",
+  "readmes": {
+    "README.md": "Cite Salman, Ikram, Kaafar 2024 for dataset/code use",
+    "Code/README.md": "Purpose index, not complete environment or reproduction instructions",
+    "Data/README.md": "Consolidated SMS dataset spans 2012 through 2024; no per-row sources or dates"
+  },
+  "integration": [
+    "Keep four proposal LogisticRegression systems",
+    "Adapt feature_analysis as non-destructive descriptive audit; preserve raw text",
+    "Do not adopt aggressive stopword/symbol/number removal, spelling correction, or automatic language filtering",
+    "Freeze grouped splits before controlled perturbations; learn vocabulary and IDF only from train",
+    "Treat Excel as sourced supplementary examples, not extra labelled training truth; check main/cross-workbook overlap"
+  ],
+  "commit": "a0889f36fb59e23a7f853a6932485d93d18b8afc",
+  "repository": "https://github.com/smspamresearch/spstudy"
+}

@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 24px;
+  color: #222;
+}
+
+main { max-width: 1000px; margin: auto; }
+section { margin: 28px 0; }
+label { display: block; }
+textarea { width: 100%; box-sizing: border-box; font: inherit; }
+button, select { font: inherit; margin: 4px 4px 4px 0; }
+input[type="range"] { width: 240px; max-width: 100%; }
+.text-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+article { border: 1px solid #ccc; padding: 12px; min-width: 0; }
+article h3 { margin-top: 0; }
+article p { white-space: pre-wrap; overflow-wrap: anywhere; }
+mark { background: #fff0a6; }
+.normalized-mark { background: #dcefd5; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+li { overflow-wrap: anywhere; }
+
+@media (max-width: 700px) {
+  body { margin: 16px; }
+  .text-grid { grid-template-columns: 1fr; }
+}
+
+select {
+  appearance: none;
+  padding: .35rem 2rem .35rem .5rem;
+  background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='m4 6 4 4 4-4' fill='none' stroke='%23222' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat right .5rem center;
+  max-width: 100%;
+}
+button { cursor: pointer; padding: .35rem .7rem; }
+button:disabled { cursor: wait; }

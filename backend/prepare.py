@@ -1,6 +1,7 @@
 """Audit a labelled CSV, group related messages, then split without group leakage."""
 
 import argparse
+import csv
 import hashlib
 import json
 import random
@@ -132,17 +133,39 @@ def validate_splits(frame):
 
 
 def prepare(input_path, output, text_column="text", label_column="label",
-            spam_label="spam", ham_label="ham", seed=42, near_threshold=0.85):
+            spam_label="spam", ham_label="ham", seed=42, near_threshold=0.85,
+            encoding="utf-8-sig"):
     input_path, output = Path(input_path), Path(output)
-    raw = pd.read_csv(input_path, dtype=str, keep_default_na=False, encoding="utf-8-sig")
+    # Read records explicitly: pandas' C reader can truncate NUL characters,
+    # while its Python reader can skip blank records even with skip_blank_lines=False.
+    # The native CSV reader retains blanks; unsupported controls fail visibly.
+    with input_path.open(encoding=encoding, newline="") as stream:
+        reader = csv.reader(stream, strict=True)
+        columns = next(reader, [])
+        if not columns or len(columns) != len(set(columns)):
+            raise ValueError("CSV must have a nonempty, unique header.")
+        records = []
+        for record, values in enumerate(reader, 2):
+            if len(values) > len(columns):
+                raise ValueError(f"CSV record {record} has more fields than its header.")
+            records.append(values + [""] * (len(columns) - len(values)))
+    raw = pd.DataFrame(records, columns=columns, dtype=str)
     if text_column not in raw or label_column not in raw:
         raise ValueError(f"Input columns are {list(raw.columns)}; specify text/label columns explicitly.")
     frame = raw[[text_column, label_column]].copy()
     frame.columns = ["text", "label"]
+    # Record numbers count CSV records (header = 1), not physical file lines:
+    # a quoted message can contain line breaks.
+    frame["source_record"] = np.arange(len(frame)) + 2
     frame.label = frame.label.str.strip().str.casefold()
     empty = frame.text.str.strip().eq("") | frame.label.eq("")
+    missing = frame.loc[empty].copy()
+    missing["reason"] = np.where(missing.text.str.strip().eq(""),
+                                  "missing_text", "missing_label")
+    missing.loc[missing.text.str.strip().eq("") & missing.label.eq(""),
+                "reason"] = "missing_text_and_label"
     frame = frame.loc[~empty].copy()
-    label_map = {spam_label.casefold(): "spam", ham_label.casefold(): "ham"}
+    label_map = {spam_label.strip().casefold(): "spam", ham_label.strip().casefold(): "ham"}
     if len(label_map) != 2:
         raise ValueError("spam-label and ham-label must differ.")
     unknown = set(frame.label) - set(label_map)
@@ -154,20 +177,50 @@ def prepare(input_path, output, text_column="text", label_column="label",
     conflicting_keys = set(conflicts[conflicts].index)
     conflicting = frame.key.isin(conflicting_keys)
     conflict_rows = int(conflicting.sum())
-    quarantined = frame.loc[conflicting, ["text", "label", "key"]]
+    quarantined = frame.loc[conflicting, ["source_record", "text", "label", "key"]]
     frame = frame.loc[~conflicting].copy()
     before_dedup = len(frame)
     # Sort to make group representatives and splits independent of CSV row order.
-    frame = frame.sort_values(["key", "text"]).drop_duplicates("key").reset_index(drop=True)
+    frame = frame.sort_values(["key", "text", "source_record"])
+    duplicates = frame.loc[frame.duplicated("key")].copy()
+    duplicates["kept_message_id"] = duplicates.key.map(
+        lambda key: hashlib.sha256(key.encode()).hexdigest()[:20])
+    frame = frame.drop_duplicates("key").reset_index(drop=True)
     duplicate_rows = before_dedup - len(frame)
     if frame.empty:
         raise ValueError("No usable messages after cleaning.")
     frame["message_id"] = frame.key.map(lambda key: hashlib.sha256(key.encode()).hexdigest()[:20])
     frame["group_id"] = group_related(frame.text.tolist(), near_threshold, seed)
     frame = assign_splits(frame.drop(columns="key"), seed)
+    retained = frame[["source_record", "message_id", "split", "group_id"]].copy()
     frame = frame[["message_id", "text", "label", "split", "group_id"]]
+    # Keep an exhaustive disposition for every source record, including removals.
+    disposition = pd.DataFrame({"source_record": np.arange(len(raw)) + 2,
+                                "status": "kept", "message_id": "",
+                                "split": "", "group_id": ""})
+    for records, status in ((missing, "missing"), (quarantined, "conflict"),
+                            (duplicates, "duplicate")):
+        disposition.loc[disposition.source_record.isin(records.source_record), "status"] = status
+    provenance_columns = ["message_id", "split", "group_id"]
+    disposition.loc[retained.source_record.to_numpy() - 2, provenance_columns] = (
+        retained[provenance_columns].to_numpy())
+    if not duplicates.empty:
+        kept = frame.set_index("message_id")
+        references = duplicates[["source_record", "kept_message_id"]].join(
+            kept[["split", "group_id"]], on="kept_message_id")
+        disposition.loc[references.source_record.to_numpy() - 2, provenance_columns] = (
+            references[["kept_message_id", "split", "group_id"]].to_numpy())
+    groups = frame.groupby("group_id").agg(
+        total=("message_id", "size"), ham=("label", lambda labels: int(labels.eq("ham").sum())),
+        spam=("label", lambda labels: int(labels.eq("spam").sum())), split=("split", "first"))
+    groups["mixed_labels"] = groups.ham.gt(0) & groups.spam.gt(0)
     audit = {
         "input_sha256": hashlib.sha256(input_path.read_bytes()).hexdigest(),
+        "input_file": str(input_path), "encoding": encoding,
+        "columns": {"text": text_column, "label": label_column},
+        "label_map": label_map,
+        "source_record_definition": "1-based CSV record number including header; not physical line number",
+        "input_label_counts": raw[label_column].value_counts().to_dict(),
         "input_rows": len(raw), "missing_rows_removed": int(empty.sum()),
         "conflicting_rows_quarantined": conflict_rows, "conflicting_keys": len(conflicting_keys),
         "duplicate_rows_removed": duplicate_rows, "usable_rows": len(frame),
@@ -178,6 +231,8 @@ def prepare(input_path, output, text_column="text", label_column="label",
                     "verified 3-word-shingle Jaccard, transitive groups; approximate retrieval",
         "group_count": int(frame.group_id.nunique()),
         "largest_group": int(frame.groupby("group_id").size().max()),
+        "non_singleton_groups": int(groups.total.gt(1).sum()),
+        "mixed_label_groups": int(groups.mixed_labels.sum()),
         "counts": {split: {"total": len(rows), "ham": int(rows.label.eq("ham").sum()),
                             "spam": int(rows.label.eq("spam").sum()),
                             "groups": int(rows.group_id.nunique())}
@@ -186,6 +241,13 @@ def prepare(input_path, output, text_column="text", label_column="label",
     output.mkdir(parents=True, exist_ok=True)
     frame.to_csv(output / "splits.csv", index=False)
     quarantined.to_csv(output / "conflicts.csv", index=False)
+    missing.to_csv(output / "missing.csv", index=False)
+    duplicates.to_csv(output / "duplicates.csv", index=False)
+    disposition.to_csv(output / "row_disposition.csv", index=False)
+    groups.to_csv(output / "groups.csv")
+    audit["splits_sha256"] = hashlib.sha256((output / "splits.csv").read_bytes()).hexdigest()
+    audit["row_accounting_valid"] = (len(raw) == int(empty.sum()) + conflict_rows +
+                                     duplicate_rows + len(frame))
     (output / "audit.json").write_text(json.dumps(audit, indent=2) + "\n", encoding="utf-8")
     return audit
 
@@ -198,6 +260,8 @@ def main():
     parser.add_argument("--label-column", default="label")
     parser.add_argument("--spam-label", default="spam")
     parser.add_argument("--ham-label", default="ham")
+    parser.add_argument("--encoding", default="utf-8-sig",
+                        help="Explicit source encoding; the published Super SMS CSV uses latin-1.")
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--near-threshold", type=float, default=0.85)
     print(json.dumps(prepare(**vars(parser.parse_args())), indent=2))

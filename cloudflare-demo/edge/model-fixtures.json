@@ -1,0 +1,3207 @@
+{
+  "model_id": "9439f39e3b9e7f45",
+  "cases": 100,
+  "rows": [
+    {
+      "case_id": 0,
+      "system": "majority",
+      "original_text": "",
+      "model_input": "",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 1,
+      "system": "majority",
+      "original_text": " ",
+      "model_input": " ",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 2,
+      "system": "majority",
+      "original_text": "unknownwordzzzz",
+      "model_input": "unknownwordzzzz",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 3,
+      "system": "majority",
+      "original_text": "free free free prize",
+      "model_input": "free free free prize",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 4,
+      "system": "majority",
+      "original_text": "f.r.e.e fr€e freee",
+      "model_input": "f.r.e.e fr€e freee",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 5,
+      "system": "majority",
+      "original_text": "1st 2nd 3rd 4th 101st class",
+      "model_input": "1st 2nd 3rd 4th 101st class",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 6,
+      "system": "majority",
+      "original_text": "Your BOOK is HERE",
+      "model_input": "Your BOOK is HERE",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 7,
+      "system": "majority",
+      "original_text": "coffee tomorrow at 3pm",
+      "model_input": "coffee tomorrow at 3pm",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 8,
+      "system": "majority",
+      "original_text": "https://example.com/free hello@example.org +1 212-555-0199",
+      "model_input": "https://example.com/free hello@example.org +1 212-555-0199",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 9,
+      "system": "majority",
+      "original_text": "___ __proto__ constructor",
+      "model_input": "___ __proto__ constructor",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 10,
+      "system": "majority",
+      "original_text": "free\nprize",
+      "model_input": "free\nprize",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 11,
+      "system": "majority",
+      "original_text": "free\tprize",
+      "model_input": "free\tprize",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 12,
+      "system": "majority",
+      "original_text": "free\r\nprize",
+      "model_input": "free\r\nprize",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 13,
+      "system": "majority",
+      "original_text": "free\u001cprize",
+      "model_input": "free\u001cprize",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 14,
+      "system": "majority",
+      "original_text": "free\u001c\u001fprize",
+      "model_input": "free\u001c\u001fprize",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 15,
+      "system": "majority",
+      "original_text": "freeprize",
+      "model_input": "freeprize",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 16,
+      "system": "majority",
+      "original_text": "free prize",
+      "model_input": "free prize",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 17,
+      "system": "majority",
+      "original_text": "free prize",
+      "model_input": "free prize",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 18,
+      "system": "majority",
+      "original_text": "free  prize",
+      "model_input": "free  prize",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 19,
+      "system": "majority",
+      "original_text": "𝒇𝒓𝒆𝒆 prize 😀 café",
+      "model_input": "𝒇𝒓𝒆𝒆 prize 😀 café",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 20,
+      "system": "majority",
+      "original_text": "İI ıſ KKK",
+      "model_input": "İI ıſ KKK",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 21,
+      "system": "majority",
+      "original_text": "ΟΣ ΟΣΑ Σσς",
+      "model_input": "ΟΣ ΟΣΑ Σσς",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 22,
+      "system": "majority",
+      "original_text": "mañana über café",
+      "model_input": "mañana über café",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 23,
+      "system": "majority",
+      "original_text": "你好 免费 prize",
+      "model_input": "你好 免费 prize",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 24,
+      "system": "majority",
+      "original_text": "Ⅻ ² Ⅳ1 ₁2",
+      "model_input": "Ⅻ ² Ⅳ1 ₁2",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 25,
+      "system": "majority",
+      "original_text": "___free___ _a a_",
+      "model_input": "___free___ _a a_",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 26,
+      "system": "majority",
+      "original_text": "a a a a",
+      "model_input": "a a a a",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 27,
+      "system": "majority",
+      "original_text": "free!prize?hello",
+      "model_input": "free!prize?hello",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 28,
+      "system": "majority",
+      "original_text": "Ააბგ ქართული",
+      "model_input": "Ააბგ ქართული",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 29,
+      "system": "majority",
+      "original_text": "😀😀fre€eee😀",
+      "model_input": "😀😀fre€eee😀",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 30,
+      "system": "majority",
+      "original_text": "foo﻿﻿bar",
+      "model_input": "foo﻿﻿bar",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 31,
+      "system": "majority",
+      "original_text": "a b c",
+      "model_input": "a b c",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 32,
+      "system": "majority",
+      "original_text": "free\u000b\fprize",
+      "model_input": "free\u000b\fprize",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 33,
+      "system": "majority",
+      "original_text": "freeᲉprize",
+      "model_input": "freeᲉprize",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 34,
+      "system": "majority",
+      "original_text": "free𐵀prize",
+      "model_input": "free𐵀prize",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 35,
+      "system": "majority",
+      "original_text": "Ok! Mon then! Around say, 1 to 2?",
+      "model_input": "Ok! Mon then! Around say, 1 to 2?",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 36,
+      "system": "majority",
+      "original_text": "want get home painted get free professionals advice  latest trendz  painting services dulux decorator center near sms dulx ",
+      "model_input": "want get home painted get free professionals advice  latest trendz  painting services dulux decorator center near sms dulx ",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 37,
+      "system": "majority",
+      "original_text": "Your access be disable due to unusual transaction with your card To restore your account follow the step on the link WWW applesecure.com",
+      "model_input": "Your access be disable due to unusual transaction with your card To restore your account follow the step on the link WWW applesecure.com",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 38,
+      "system": "majority",
+      "original_text": "Ok.. Ã finishing soon?",
+      "model_input": "Ok.. Ã finishing soon?",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 39,
+      "system": "majority",
+      "original_text": "Hello 9703XXXX99 Open Trading A C and get benefit worth Rs 85,255 Click here to open A C http://epx9.com WNHWNKKMYHANMZ",
+      "model_input": "Hello 9703XXXX99 Open Trading A C and get benefit worth Rs 85,255 Click here to open A C http://epx9.com WNHWNKKMYHANMZ",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 40,
+      "system": "majority",
+      "original_text": "Omg i'm so sorry I just woke up!!!!!!!! Should I still go><",
+      "model_input": "Omg i'm so sorry I just woke up!!!!!!!! Should I still go><",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 41,
+      "system": "majority",
+      "original_text": "get  discount on min billing of rsalacarte at your nearest pizza hut outletoffer only on ur hdfc bank credit cardtc apply till st aug",
+      "model_input": "get  discount on min billing of rsalacarte at your nearest pizza hut outletoffer only on ur hdfc bank credit cardtc apply till st aug",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 42,
+      "system": "majority",
+      "original_text": "un breakable ultralight composite alloy fiber steel titanium frames shop now get uv kodak lenses worth rs  free www lenskart com kodak lens",
+      "model_input": "un breakable ultralight composite alloy fiber steel titanium frames shop now get uv kodak lenses worth rs  free www lenskart com kodak lens",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 43,
+      "system": "majority",
+      "original_text": "Where is the playhouse?",
+      "model_input": "Where is the playhouse?",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 44,
+      "system": "majority",
+      "original_text": "U leh, watching tv?",
+      "model_input": "U leh, watching tv?",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 45,
+      "system": "majority",
+      "original_text": "Hmm. I think she liked her sis one more.  But since that's what dmsaid, they probly need different watch for different occasions..",
+      "model_input": "Hmm. I think she liked her sis one more.  But since that's what dmsaid, they probly need different watch for different occasions..",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 46,
+      "system": "majority",
+      "original_text": "Reach sch soon! Thanks!(:",
+      "model_input": "Reach sch soon! Thanks!(:",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 47,
+      "system": "majority",
+      "original_text": "Going hostel. Wan eat together 1st?",
+      "model_input": "Going hostel. Wan eat together 1st?",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 48,
+      "system": "majority",
+      "original_text": "OK noted :)",
+      "model_input": "OK noted :)",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 49,
+      "system": "majority",
+      "original_text": "you have redeemed   payback points for your shopping and order number is   earn points and redeem them for free shopping with payback click to see all nearby stores httpbitlypbstores tnc",
+      "model_input": "you have redeemed   payback points for your shopping and order number is   earn points and redeem them for free shopping with payback click to see all nearby stores httpbitlypbstores tnc",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 50,
+      "system": "majority",
+      "original_text": "titan festival offer get up to  off on nebula real gold watch with exclusive collection  world of titan  athwalines  lalbunglow  surat ph  tc",
+      "model_input": "titan festival offer get up to  off on nebula real gold watch with exclusive collection  world of titan  athwalines  lalbunglow  surat ph  tc",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 51,
+      "system": "majority",
+      "original_text": "hi, sry abt the delay. my sis is still working on the graphics. cangive us 1 more week?",
+      "model_input": "hi, sry abt the delay. my sis is still working on the graphics. cangive us 1 more week?",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 52,
+      "system": "majority",
+      "original_text": "askmegrocery gift for loyal customers use code quick for flat rs off  extra  mobikwik cashback visit httpwwwaskmegrocerycom min purchase rs",
+      "model_input": "askmegrocery gift for loyal customers use code quick for flat rs off  extra  mobikwik cashback visit httpwwwaskmegrocerycom min purchase rs",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 53,
+      "system": "majority",
+      "original_text": "prapti invites you for upto  off saleshow this sms at cash counter before billing and get addition  discounttc apply contact ",
+      "model_input": "prapti invites you for upto  off saleshow this sms at cash counter before billing and get addition  discounttc apply contact ",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 54,
+      "system": "majority",
+      "original_text": "m chi 22.my i know where Ã¼ stay?",
+      "model_input": "m chi 22.my i know where Ã¼ stay?",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 55,
+      "system": "majority",
+      "original_text": "g summer offer  gb g data at just rs recharge now with rs and enjoy gb gg data valid for  days for more offers dial dial ",
+      "model_input": "g summer offer  gb g data at just rs recharge now with rs and enjoy gb gg data valid for  days for more offers dial dial ",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 56,
+      "system": "majority",
+      "original_text": "Ha! I wouldn't say that I just didn't read anything into way u seemed. I don't like 2 be judgemental....i save that for fridays in the pub!",
+      "model_input": "Ha! I wouldn't say that I just didn't read anything into way u seemed. I don't like 2 be judgemental....i save that for fridays in the pub!",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 57,
+      "system": "majority",
+      "original_text": "dear member  exclusive rs gift voucher awaits you at the raymond shop valid on a minimum purchase of rs till  apr at select stores code adtaavziuqm  tc call ",
+      "model_input": "dear member  exclusive rs gift voucher awaits you at the raymond shop valid on a minimum purchase of rs till  apr at select stores code adtaavziuqm  tc call ",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 58,
+      "system": "majority",
+      "original_text": "Finally the match heading towards draw as your prediction.",
+      "model_input": "Finally the match heading towards draw as your prediction.",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 59,
+      "system": "majority",
+      "original_text": "dear mr addy  you have  trident privilege points on your membership number   as on th november to redeem your points  activate your membership by writing to tridentprivilegetridenthotelscom",
+      "model_input": "dear mr addy  you have  trident privilege points on your membership number   as on th november to redeem your points  activate your membership by writing to tridentprivilegetridenthotelscom",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 60,
+      "system": "majority",
+      "original_text": "Hahah yup im going slow when reaching humps hahaha",
+      "model_input": "Hahah yup im going slow when reaching humps hahaha",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 61,
+      "system": "majority",
+      "original_text": "Ok. Then who reach go buy tix first. Dinner, me anything. Depends u wan eat w ur parents or not lor.",
+      "model_input": "Ok. Then who reach go buy tix first. Dinner, me anything. Depends u wan eat w ur parents or not lor.",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 62,
+      "system": "majority",
+      "original_text": "have you tried bigbasket express yet be it fresh fruits  vegetables  bread or dairy  get them all delievered in  mins order now  httpgooglrmis",
+      "model_input": "have you tried bigbasket express yet be it fresh fruits  vegetables  bread or dairy  get them all delievered in  mins order now  httpgooglrmis",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 63,
+      "system": "majority",
+      "original_text": "Did you wait three hours and make it through? ",
+      "model_input": "Did you wait three hours and make it through? ",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 64,
+      "system": "majority",
+      "original_text": "No no why are you sorry you don't have to do anything! Go goconcentrate, here's two square brackets for you:[] haha (:",
+      "model_input": "No no why are you sorry you don't have to do anything! Go goconcentrate, here's two square brackets for you:[] haha (:",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 65,
+      "system": "majority",
+      "original_text": "Okay... my next stop is novena... where is that? Behind the mrt ah?",
+      "model_input": "Okay... my next stop is novena... where is that? Behind the mrt ah?",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 66,
+      "system": "majority",
+      "original_text": "dear sir  as per discussed with you regarding the lutron automation but as i am out of the kit of the same product so i would like to request you please make it on some another day  im really very sorry for the inconvenience  regards nirmal kumar  ",
+      "model_input": "dear sir  as per discussed with you regarding the lutron automation but as i am out of the kit of the same product so i would like to request you please make it on some another day  im really very sorry for the inconvenience  regards nirmal kumar  ",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 67,
+      "system": "majority",
+      "original_text": "Your CommBank account have be block to lift the restriction click here to re-verify your account http://comm-99ae7.web.app/",
+      "model_input": "Your CommBank account have be block to lift the restriction click here to re-verify your account http://comm-99ae7.web.app/",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 68,
+      "system": "majority",
+      "original_text": "Oh nvm I shall wear jeans!",
+      "model_input": "Oh nvm I shall wear jeans!",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 69,
+      "system": "majority",
+      "original_text": "1000's of girls many local 2 u who r virgins 2 this & r ready 2 4fil ur every sexual need. Can u 4fil theirs? text CUTE to 69911(??1.50p. m)",
+      "model_input": "1000's of girls many local 2 u who r virgins 2 this & r ready 2 4fil ur every sexual need. Can u 4fil theirs? text CUTE to 69911(??1.50p. m)",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 70,
+      "system": "majority",
+      "original_text": "will be back on wed",
+      "model_input": "will be back on wed",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 71,
+      "system": "majority",
+      "original_text": "L3 Level hiring in TOP Noida Bpo with 18k inhand sal+inc+US insurance C.service.Call us as limited seats available.Uk & Dayshift also available.Sonam/9871389382",
+      "model_input": "L3 Level hiring in TOP Noida Bpo with 18k inhand sal+inc+US insurance C.service.Call us as limited seats available.Uk & Dayshift also available.Sonam/9871389382",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 72,
+      "system": "majority",
+      "original_text": "There is a kind of conditioner in pet's central that is for calciumfor terrapin's shell.",
+      "model_input": "There is a kind of conditioner in pet's central that is for calciumfor terrapin's shell.",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 73,
+      "system": "majority",
+      "original_text": "Which mods are u appealing? Proj management n is consulting?",
+      "model_input": "Which mods are u appealing? Proj management n is consulting?",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 74,
+      "system": "majority",
+      "original_text": "yayfound a way to nt chg date. help u do next time we meet",
+      "model_input": "yayfound a way to nt chg date. help u do next time we meet",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 75,
+      "system": "majority",
+      "original_text": "Happy birthday! I'm on your bus =P",
+      "model_input": "Happy birthday! I'm on your bus =P",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 76,
+      "system": "majority",
+      "original_text": "I doing my part now, more or less I know what to write, just need todiscuss with every1 for how complex abdomen make sure all parts rcoherent.  <#>  u want or not? Lidat can make jaime come out withsomething lor.",
+      "model_input": "I doing my part now, more or less I know what to write, just need todiscuss with every1 for how complex abdomen make sure all parts rcoherent.  <#>  u want or not? Lidat can make jaime come out withsomething lor.",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 77,
+      "system": "majority",
+      "original_text": "OMG I'M NOT GONNA BE HOMELESS",
+      "model_input": "OMG I'M NOT GONNA BE HOMELESS",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 78,
+      "system": "majority",
+      "original_text": "avail zero fee benefit with special rates offers on new  transfer of loan  home loan    lap    od  cc  bg    call ",
+      "model_input": "avail zero fee benefit with special rates offers on new  transfer of loan  home loan    lap    od  cc  bg    call ",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 79,
+      "system": "majority",
+      "original_text": "I wont do anything de.",
+      "model_input": "I wont do anything de.",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 80,
+      "system": "majority",
+      "original_text": "Dear dun worry la.  I think he still at his home. Kisses for u.:-)",
+      "model_input": "Dear dun worry la.  I think he still at his home. Kisses for u.:-)",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 81,
+      "system": "majority",
+      "original_text": "Dear customer Your SBI account have be block Please update your KYC in click here link http://bit.ly/3ztGQYI SBIBANK",
+      "model_input": "Dear customer Your SBI account have be block Please update your KYC in click here link http://bit.ly/3ztGQYI SBIBANK",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 82,
+      "system": "majority",
+      "original_text": "My hd spoilt",
+      "model_input": "My hd spoilt",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 83,
+      "system": "majority",
+      "original_text": "dominos cheesy  crunchy offerget  off on double cheese crunch pizza on min bill of  todayorder online dominoscoin cpn crmab tc",
+      "model_input": "dominos cheesy  crunchy offerget  off on double cheese crunch pizza on min bill of  todayorder online dominoscoin cpn crmab tc",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 84,
+      "system": "majority",
+      "original_text": "my sawa offers  specially for you  dial  or visit  httpwwwaljawalnetsaprimarymysawaoffer   for free to know your offers now   subscribe today and have a chance to win a mercedes car   to change your  language to english please send l to ",
+      "model_input": "my sawa offers  specially for you  dial  or visit  httpwwwaljawalnetsaprimarymysawaoffer   for free to know your offers now   subscribe today and have a chance to win a mercedes car   to change your  language to english please send l to ",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 85,
+      "system": "majority",
+      "original_text": "Hey what how about your project. Started aha da.",
+      "model_input": "Hey what how about your project. Started aha da.",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 86,
+      "system": "majority",
+      "original_text": "With my friends... So sad... Goin back today...",
+      "model_input": "With my friends... So sad... Goin back today...",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 87,
+      "system": "majority",
+      "original_text": "yeah im invited., but im not sure if i cud make it., since my tai ami expired and now my taya abbu is also hospitalized in serious condition., my mom and dad stay over there at night in the hospital.,",
+      "model_input": "yeah im invited., but im not sure if i cud make it., since my tai ami expired and now my taya abbu is also hospitalized in serious condition., my mom and dad stay over there at night in the hospital.,",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 88,
+      "system": "majority",
+      "original_text": "Baskin Robbins introduces hot fresh waffle with a scoop of your favourite ice cream from just Rs XX onwards For more detail click",
+      "model_input": "Baskin Robbins introduces hot fresh waffle with a scoop of your favourite ice cream from just Rs XX onwards For more detail click",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 89,
+      "system": "majority",
+      "original_text": "s tomorrow...",
+      "model_input": "s tomorrow...",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 90,
+      "system": "majority",
+      "original_text": "Ya lo examine coming so.soon T.T... sianz! Lol... haha ok arh got 6hour enuff bah I hope lol",
+      "model_input": "Ya lo examine coming so.soon T.T... sianz! Lol... haha ok arh got 6hour enuff bah I hope lol",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 91,
+      "system": "majority",
+      "original_text": "Thanks alot. Really apologetic for disturbing you.",
+      "model_input": "Thanks alot. Really apologetic for disturbing you.",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 92,
+      "system": "majority",
+      "original_text": "big new for sang froid labs ltd  company gets approval for riten syrup to sell in us market which effect sale   cmp  buy for tgt  ",
+      "model_input": "big new for sang froid labs ltd  company gets approval for riten syrup to sell in us market which effect sale   cmp  buy for tgt  ",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 93,
+      "system": "majority",
+      "original_text": "U wanna ask jason whether he free to play?? If he ok then we actuallycan go ur house play.",
+      "model_input": "U wanna ask jason whether he free to play?? If he ok then we actuallycan go ur house play.",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 94,
+      "system": "majority",
+      "original_text": "Lecture ended early, I'm otw home le.. Will you be home for lunch?",
+      "model_input": "Lecture ended early, I'm otw home le.. Will you be home for lunch?",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 95,
+      "system": "majority",
+      "original_text": "Dad, what time you off work today?",
+      "model_input": "Dad, what time you off work today?",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 96,
+      "system": "majority",
+      "original_text": "My favour will shine on you like the morning sun, and your wounds will be quickly healed. I will always be with you to save you : My presence will protect you on every side. When you pray, I will answer you. When you call to me, I will respond. Isaiah <TIME> ,9 Praise the Lord ! Our GOD is a living GOD who listens to every single prayer of ours. He is ALWAYS with us. Have a blessed day IN CHRIST my dear brothers and sisters:-) :-)",
+      "model_input": "My favour will shine on you like the morning sun, and your wounds will be quickly healed. I will always be with you to save you : My presence will protect you on every side. When you pray, I will answer you. When you call to me, I will respond. Isaiah <TIME> ,9 Praise the Lord ! Our GOD is a living GOD who listens to every single prayer of ours. He is ALWAYS with us. Have a blessed day IN CHRIST my dear brothers and sisters:-) :-)",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 97,
+      "system": "majority",
+      "original_text": "umm just like that  no reason in particular ",
+      "model_input": "umm just like that  no reason in particular ",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 98,
+      "system": "majority",
+      "original_text": "hey i am thinking of upgrading my pc. any good lobang anot?",
+      "model_input": "hey i am thinking of upgrading my pc. any good lobang anot?",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 99,
+      "system": "majority",
+      "original_text": "Anything also can.. u taking bus back to interchange?",
+      "model_input": "Anything also can.. u taking bus back to interchange?",
+      "score": 0.0,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 0,
+      "system": "A",
+      "original_text": "",
+      "model_input": "",
+      "score": 0.05055985608970481,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 1,
+      "system": "A",
+      "original_text": " ",
+      "model_input": " ",
+      "score": 0.05055985608970481,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 2,
+      "system": "A",
+      "original_text": "unknownwordzzzz",
+      "model_input": "unknownwordzzzz",
+      "score": 0.05055985608970481,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 3,
+      "system": "A",
+      "original_text": "free free free prize",
+      "model_input": "free free free prize",
+      "score": 0.43261372154368744,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 4,
+      "system": "A",
+      "original_text": "f.r.e.e fr€e freee",
+      "model_input": "f.r.e.e fr€e freee",
+      "score": 0.06342244341285629,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 5,
+      "system": "A",
+      "original_text": "1st 2nd 3rd 4th 101st class",
+      "model_input": "1st 2nd 3rd 4th 101st class",
+      "score": 0.015534779503747225,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 6,
+      "system": "A",
+      "original_text": "Your BOOK is HERE",
+      "model_input": "Your BOOK is HERE",
+      "score": 0.5236298538345507,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 7,
+      "system": "A",
+      "original_text": "coffee tomorrow at 3pm",
+      "model_input": "coffee tomorrow at 3pm",
+      "score": 0.035232437233373874,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 8,
+      "system": "A",
+      "original_text": "https://example.com/free hello@example.org +1 212-555-0199",
+      "model_input": "https://example.com/free hello@example.org +1 212-555-0199",
+      "score": 0.9167517594798729,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 9,
+      "system": "A",
+      "original_text": "___ __proto__ constructor",
+      "model_input": "___ __proto__ constructor",
+      "score": 0.05055985608970481,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 10,
+      "system": "A",
+      "original_text": "free\nprize",
+      "model_input": "free\nprize",
+      "score": 0.7153510777215992,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 11,
+      "system": "A",
+      "original_text": "free\tprize",
+      "model_input": "free\tprize",
+      "score": 0.7153510777215992,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 12,
+      "system": "A",
+      "original_text": "free\r\nprize",
+      "model_input": "free\r\nprize",
+      "score": 0.7153510777215992,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 13,
+      "system": "A",
+      "original_text": "free\u001cprize",
+      "model_input": "free\u001cprize",
+      "score": 0.7153510777215992,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 14,
+      "system": "A",
+      "original_text": "free\u001c\u001fprize",
+      "model_input": "free\u001c\u001fprize",
+      "score": 0.7153510777215992,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 15,
+      "system": "A",
+      "original_text": "freeprize",
+      "model_input": "freeprize",
+      "score": 0.7153510777215992,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 16,
+      "system": "A",
+      "original_text": "free prize",
+      "model_input": "free prize",
+      "score": 0.7153510777215992,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 17,
+      "system": "A",
+      "original_text": "free prize",
+      "model_input": "free prize",
+      "score": 0.7153510777215992,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 18,
+      "system": "A",
+      "original_text": "free  prize",
+      "model_input": "free  prize",
+      "score": 0.7153510777215992,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 19,
+      "system": "A",
+      "original_text": "𝒇𝒓𝒆𝒆 prize 😀 café",
+      "model_input": "𝒇𝒓𝒆𝒆 prize 😀 café",
+      "score": 0.3217673763386115,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 20,
+      "system": "A",
+      "original_text": "İI ıſ KKK",
+      "model_input": "İI ıſ KKK",
+      "score": 0.05055985608970481,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 21,
+      "system": "A",
+      "original_text": "ΟΣ ΟΣΑ Σσς",
+      "model_input": "ΟΣ ΟΣΑ Σσς",
+      "score": 0.05055985608970481,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 22,
+      "system": "A",
+      "original_text": "mañana über café",
+      "model_input": "mañana über café",
+      "score": 0.05055985608970481,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 23,
+      "system": "A",
+      "original_text": "你好 免费 prize",
+      "model_input": "你好 免费 prize",
+      "score": 0.3217673763386115,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 24,
+      "system": "A",
+      "original_text": "Ⅻ ² Ⅳ1 ₁2",
+      "model_input": "Ⅻ ² Ⅳ1 ₁2",
+      "score": 0.05055985608970481,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 25,
+      "system": "A",
+      "original_text": "___free___ _a a_",
+      "model_input": "___free___ _a a_",
+      "score": 0.05055985608970481,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 26,
+      "system": "A",
+      "original_text": "a a a a",
+      "model_input": "a a a a",
+      "score": 0.05055985608970481,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 27,
+      "system": "A",
+      "original_text": "free!prize?hello",
+      "model_input": "free!prize?hello",
+      "score": 0.7054853012733743,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 28,
+      "system": "A",
+      "original_text": "Ააბგ ქართული",
+      "model_input": "Ააბგ ქართული",
+      "score": 0.05055985608970481,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 29,
+      "system": "A",
+      "original_text": "😀😀fre€eee😀",
+      "model_input": "😀😀fre€eee😀",
+      "score": 0.05752155892975399,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 30,
+      "system": "A",
+      "original_text": "foo﻿﻿bar",
+      "model_input": "foo﻿﻿bar",
+      "score": 0.09568884326223184,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 31,
+      "system": "A",
+      "original_text": "a b c",
+      "model_input": "a b c",
+      "score": 0.05055985608970481,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 32,
+      "system": "A",
+      "original_text": "free\u000b\fprize",
+      "model_input": "free\u000b\fprize",
+      "score": 0.7153510777215992,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 33,
+      "system": "A",
+      "original_text": "freeᲉprize",
+      "model_input": "freeᲉprize",
+      "score": 0.7153510777215992,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 34,
+      "system": "A",
+      "original_text": "free𐵀prize",
+      "model_input": "free𐵀prize",
+      "score": 0.7153510777215992,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 35,
+      "system": "A",
+      "original_text": "Ok! Mon then! Around say, 1 to 2?",
+      "model_input": "Ok! Mon then! Around say, 1 to 2?",
+      "score": 0.004534433584886462,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 36,
+      "system": "A",
+      "original_text": "want get home painted get free professionals advice  latest trendz  painting services dulux decorator center near sms dulx ",
+      "model_input": "want get home painted get free professionals advice  latest trendz  painting services dulux decorator center near sms dulx ",
+      "score": 0.9537683535853766,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 37,
+      "system": "A",
+      "original_text": "Your access be disable due to unusual transaction with your card To restore your account follow the step on the link WWW applesecure.com",
+      "model_input": "Your access be disable due to unusual transaction with your card To restore your account follow the step on the link WWW applesecure.com",
+      "score": 0.9954344171285829,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 38,
+      "system": "A",
+      "original_text": "Ok.. Ã finishing soon?",
+      "model_input": "Ok.. Ã finishing soon?",
+      "score": 0.005469667455141227,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 39,
+      "system": "A",
+      "original_text": "Hello 9703XXXX99 Open Trading A C and get benefit worth Rs 85,255 Click here to open A C http://epx9.com WNHWNKKMYHANMZ",
+      "model_input": "Hello 9703XXXX99 Open Trading A C and get benefit worth Rs 85,255 Click here to open A C http://epx9.com WNHWNKKMYHANMZ",
+      "score": 0.9972901342124958,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 40,
+      "system": "A",
+      "original_text": "Omg i'm so sorry I just woke up!!!!!!!! Should I still go><",
+      "model_input": "Omg i'm so sorry I just woke up!!!!!!!! Should I still go><",
+      "score": 0.0011169829291566556,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 41,
+      "system": "A",
+      "original_text": "get  discount on min billing of rsalacarte at your nearest pizza hut outletoffer only on ur hdfc bank credit cardtc apply till st aug",
+      "model_input": "get  discount on min billing of rsalacarte at your nearest pizza hut outletoffer only on ur hdfc bank credit cardtc apply till st aug",
+      "score": 0.9923852738373121,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 42,
+      "system": "A",
+      "original_text": "un breakable ultralight composite alloy fiber steel titanium frames shop now get uv kodak lenses worth rs  free www lenskart com kodak lens",
+      "model_input": "un breakable ultralight composite alloy fiber steel titanium frames shop now get uv kodak lenses worth rs  free www lenskart com kodak lens",
+      "score": 0.9798952953096979,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 43,
+      "system": "A",
+      "original_text": "Where is the playhouse?",
+      "model_input": "Where is the playhouse?",
+      "score": 0.008934881800076318,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 44,
+      "system": "A",
+      "original_text": "U leh, watching tv?",
+      "model_input": "U leh, watching tv?",
+      "score": 0.01595393928612769,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 45,
+      "system": "A",
+      "original_text": "Hmm. I think she liked her sis one more.  But since that's what dmsaid, they probly need different watch for different occasions..",
+      "model_input": "Hmm. I think she liked her sis one more.  But since that's what dmsaid, they probly need different watch for different occasions..",
+      "score": 0.002191744208048264,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 46,
+      "system": "A",
+      "original_text": "Reach sch soon! Thanks!(:",
+      "model_input": "Reach sch soon! Thanks!(:",
+      "score": 0.007396638708405596,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 47,
+      "system": "A",
+      "original_text": "Going hostel. Wan eat together 1st?",
+      "model_input": "Going hostel. Wan eat together 1st?",
+      "score": 0.003483575997926675,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 48,
+      "system": "A",
+      "original_text": "OK noted :)",
+      "model_input": "OK noted :)",
+      "score": 0.00861173587840167,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 49,
+      "system": "A",
+      "original_text": "you have redeemed   payback points for your shopping and order number is   earn points and redeem them for free shopping with payback click to see all nearby stores httpbitlypbstores tnc",
+      "model_input": "you have redeemed   payback points for your shopping and order number is   earn points and redeem them for free shopping with payback click to see all nearby stores httpbitlypbstores tnc",
+      "score": 0.9887271828082238,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 50,
+      "system": "A",
+      "original_text": "titan festival offer get up to  off on nebula real gold watch with exclusive collection  world of titan  athwalines  lalbunglow  surat ph  tc",
+      "model_input": "titan festival offer get up to  off on nebula real gold watch with exclusive collection  world of titan  athwalines  lalbunglow  surat ph  tc",
+      "score": 0.9895908371667346,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 51,
+      "system": "A",
+      "original_text": "hi, sry abt the delay. my sis is still working on the graphics. cangive us 1 more week?",
+      "model_input": "hi, sry abt the delay. my sis is still working on the graphics. cangive us 1 more week?",
+      "score": 0.023740851638866526,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 52,
+      "system": "A",
+      "original_text": "askmegrocery gift for loyal customers use code quick for flat rs off  extra  mobikwik cashback visit httpwwwaskmegrocerycom min purchase rs",
+      "model_input": "askmegrocery gift for loyal customers use code quick for flat rs off  extra  mobikwik cashback visit httpwwwaskmegrocerycom min purchase rs",
+      "score": 0.9938547054153787,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 53,
+      "system": "A",
+      "original_text": "prapti invites you for upto  off saleshow this sms at cash counter before billing and get addition  discounttc apply contact ",
+      "model_input": "prapti invites you for upto  off saleshow this sms at cash counter before billing and get addition  discounttc apply contact ",
+      "score": 0.9949574363262386,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 54,
+      "system": "A",
+      "original_text": "m chi 22.my i know where Ã¼ stay?",
+      "model_input": "m chi 22.my i know where Ã¼ stay?",
+      "score": 0.010142664781489388,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 55,
+      "system": "A",
+      "original_text": "g summer offer  gb g data at just rs recharge now with rs and enjoy gb gg data valid for  days for more offers dial dial ",
+      "model_input": "g summer offer  gb g data at just rs recharge now with rs and enjoy gb gg data valid for  days for more offers dial dial ",
+      "score": 0.9996541474238421,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 56,
+      "system": "A",
+      "original_text": "Ha! I wouldn't say that I just didn't read anything into way u seemed. I don't like 2 be judgemental....i save that for fridays in the pub!",
+      "model_input": "Ha! I wouldn't say that I just didn't read anything into way u seemed. I don't like 2 be judgemental....i save that for fridays in the pub!",
+      "score": 0.019745299578698753,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 57,
+      "system": "A",
+      "original_text": "dear member  exclusive rs gift voucher awaits you at the raymond shop valid on a minimum purchase of rs till  apr at select stores code adtaavziuqm  tc call ",
+      "model_input": "dear member  exclusive rs gift voucher awaits you at the raymond shop valid on a minimum purchase of rs till  apr at select stores code adtaavziuqm  tc call ",
+      "score": 0.9962490026272105,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 58,
+      "system": "A",
+      "original_text": "Finally the match heading towards draw as your prediction.",
+      "model_input": "Finally the match heading towards draw as your prediction.",
+      "score": 0.15302834722676661,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 59,
+      "system": "A",
+      "original_text": "dear mr addy  you have  trident privilege points on your membership number   as on th november to redeem your points  activate your membership by writing to tridentprivilegetridenthotelscom",
+      "model_input": "dear mr addy  you have  trident privilege points on your membership number   as on th november to redeem your points  activate your membership by writing to tridentprivilegetridenthotelscom",
+      "score": 0.98259195577714,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 60,
+      "system": "A",
+      "original_text": "Hahah yup im going slow when reaching humps hahaha",
+      "model_input": "Hahah yup im going slow when reaching humps hahaha",
+      "score": 0.001229207016267245,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 61,
+      "system": "A",
+      "original_text": "Ok. Then who reach go buy tix first. Dinner, me anything. Depends u wan eat w ur parents or not lor.",
+      "model_input": "Ok. Then who reach go buy tix first. Dinner, me anything. Depends u wan eat w ur parents or not lor.",
+      "score": 0.001363285946330256,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 62,
+      "system": "A",
+      "original_text": "have you tried bigbasket express yet be it fresh fruits  vegetables  bread or dairy  get them all delievered in  mins order now  httpgooglrmis",
+      "model_input": "have you tried bigbasket express yet be it fresh fruits  vegetables  bread or dairy  get them all delievered in  mins order now  httpgooglrmis",
+      "score": 0.7095476519901067,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 63,
+      "system": "A",
+      "original_text": "Did you wait three hours and make it through? ",
+      "model_input": "Did you wait three hours and make it through? ",
+      "score": 0.051716167446948465,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 64,
+      "system": "A",
+      "original_text": "No no why are you sorry you don't have to do anything! Go goconcentrate, here's two square brackets for you:[] haha (:",
+      "model_input": "No no why are you sorry you don't have to do anything! Go goconcentrate, here's two square brackets for you:[] haha (:",
+      "score": 0.003928231789928133,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 65,
+      "system": "A",
+      "original_text": "Okay... my next stop is novena... where is that? Behind the mrt ah?",
+      "model_input": "Okay... my next stop is novena... where is that? Behind the mrt ah?",
+      "score": 0.004111140806671056,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 66,
+      "system": "A",
+      "original_text": "dear sir  as per discussed with you regarding the lutron automation but as i am out of the kit of the same product so i would like to request you please make it on some another day  im really very sorry for the inconvenience  regards nirmal kumar  ",
+      "model_input": "dear sir  as per discussed with you regarding the lutron automation but as i am out of the kit of the same product so i would like to request you please make it on some another day  im really very sorry for the inconvenience  regards nirmal kumar  ",
+      "score": 0.3282887903506101,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 67,
+      "system": "A",
+      "original_text": "Your CommBank account have be block to lift the restriction click here to re-verify your account http://comm-99ae7.web.app/",
+      "model_input": "Your CommBank account have be block to lift the restriction click here to re-verify your account http://comm-99ae7.web.app/",
+      "score": 0.9974648874430779,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 68,
+      "system": "A",
+      "original_text": "Oh nvm I shall wear jeans!",
+      "model_input": "Oh nvm I shall wear jeans!",
+      "score": 0.009095244831377238,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 69,
+      "system": "A",
+      "original_text": "1000's of girls many local 2 u who r virgins 2 this & r ready 2 4fil ur every sexual need. Can u 4fil theirs? text CUTE to 69911(??1.50p. m)",
+      "model_input": "1000's of girls many local 2 u who r virgins 2 this & r ready 2 4fil ur every sexual need. Can u 4fil theirs? text CUTE to 69911(??1.50p. m)",
+      "score": 0.6730099124552703,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 70,
+      "system": "A",
+      "original_text": "will be back on wed",
+      "model_input": "will be back on wed",
+      "score": 0.08498340027190976,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 71,
+      "system": "A",
+      "original_text": "L3 Level hiring in TOP Noida Bpo with 18k inhand sal+inc+US insurance C.service.Call us as limited seats available.Uk & Dayshift also available.Sonam/9871389382",
+      "model_input": "L3 Level hiring in TOP Noida Bpo with 18k inhand sal+inc+US insurance C.service.Call us as limited seats available.Uk & Dayshift also available.Sonam/9871389382",
+      "score": 0.9846588391825158,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 72,
+      "system": "A",
+      "original_text": "There is a kind of conditioner in pet's central that is for calciumfor terrapin's shell.",
+      "model_input": "There is a kind of conditioner in pet's central that is for calciumfor terrapin's shell.",
+      "score": 0.06044321091236757,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 73,
+      "system": "A",
+      "original_text": "Which mods are u appealing? Proj management n is consulting?",
+      "model_input": "Which mods are u appealing? Proj management n is consulting?",
+      "score": 0.01927551936116185,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 74,
+      "system": "A",
+      "original_text": "yayfound a way to nt chg date. help u do next time we meet",
+      "model_input": "yayfound a way to nt chg date. help u do next time we meet",
+      "score": 0.0262459646368859,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 75,
+      "system": "A",
+      "original_text": "Happy birthday! I'm on your bus =P",
+      "model_input": "Happy birthday! I'm on your bus =P",
+      "score": 0.09920657308789615,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 76,
+      "system": "A",
+      "original_text": "I doing my part now, more or less I know what to write, just need todiscuss with every1 for how complex abdomen make sure all parts rcoherent.  <#>  u want or not? Lidat can make jaime come out withsomething lor.",
+      "model_input": "I doing my part now, more or less I know what to write, just need todiscuss with every1 for how complex abdomen make sure all parts rcoherent.  <#>  u want or not? Lidat can make jaime come out withsomething lor.",
+      "score": 0.022568269851519857,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 77,
+      "system": "A",
+      "original_text": "OMG I'M NOT GONNA BE HOMELESS",
+      "model_input": "OMG I'M NOT GONNA BE HOMELESS",
+      "score": 0.026374246731351386,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 78,
+      "system": "A",
+      "original_text": "avail zero fee benefit with special rates offers on new  transfer of loan  home loan    lap    od  cc  bg    call ",
+      "model_input": "avail zero fee benefit with special rates offers on new  transfer of loan  home loan    lap    od  cc  bg    call ",
+      "score": 0.9869819618530334,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 79,
+      "system": "A",
+      "original_text": "I wont do anything de.",
+      "model_input": "I wont do anything de.",
+      "score": 0.013122565695448504,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 80,
+      "system": "A",
+      "original_text": "Dear dun worry la.  I think he still at his home. Kisses for u.:-)",
+      "model_input": "Dear dun worry la.  I think he still at his home. Kisses for u.:-)",
+      "score": 0.011992954866459047,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 81,
+      "system": "A",
+      "original_text": "Dear customer Your SBI account have be block Please update your KYC in click here link http://bit.ly/3ztGQYI SBIBANK",
+      "model_input": "Dear customer Your SBI account have be block Please update your KYC in click here link http://bit.ly/3ztGQYI SBIBANK",
+      "score": 0.9999456438131532,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 82,
+      "system": "A",
+      "original_text": "My hd spoilt",
+      "model_input": "My hd spoilt",
+      "score": 0.025510747480550783,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 83,
+      "system": "A",
+      "original_text": "dominos cheesy  crunchy offerget  off on double cheese crunch pizza on min bill of  todayorder online dominoscoin cpn crmab tc",
+      "model_input": "dominos cheesy  crunchy offerget  off on double cheese crunch pizza on min bill of  todayorder online dominoscoin cpn crmab tc",
+      "score": 0.9678730218140121,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 84,
+      "system": "A",
+      "original_text": "my sawa offers  specially for you  dial  or visit  httpwwwaljawalnetsaprimarymysawaoffer   for free to know your offers now   subscribe today and have a chance to win a mercedes car   to change your  language to english please send l to ",
+      "model_input": "my sawa offers  specially for you  dial  or visit  httpwwwaljawalnetsaprimarymysawaoffer   for free to know your offers now   subscribe today and have a chance to win a mercedes car   to change your  language to english please send l to ",
+      "score": 0.9935503279409755,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 85,
+      "system": "A",
+      "original_text": "Hey what how about your project. Started aha da.",
+      "model_input": "Hey what how about your project. Started aha da.",
+      "score": 0.008678974993110053,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 86,
+      "system": "A",
+      "original_text": "With my friends... So sad... Goin back today...",
+      "model_input": "With my friends... So sad... Goin back today...",
+      "score": 0.016613502421504382,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 87,
+      "system": "A",
+      "original_text": "yeah im invited., but im not sure if i cud make it., since my tai ami expired and now my taya abbu is also hospitalized in serious condition., my mom and dad stay over there at night in the hospital.,",
+      "model_input": "yeah im invited., but im not sure if i cud make it., since my tai ami expired and now my taya abbu is also hospitalized in serious condition., my mom and dad stay over there at night in the hospital.,",
+      "score": 0.010504399916411713,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 88,
+      "system": "A",
+      "original_text": "Baskin Robbins introduces hot fresh waffle with a scoop of your favourite ice cream from just Rs XX onwards For more detail click",
+      "model_input": "Baskin Robbins introduces hot fresh waffle with a scoop of your favourite ice cream from just Rs XX onwards For more detail click",
+      "score": 0.9976232600074038,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 89,
+      "system": "A",
+      "original_text": "s tomorrow...",
+      "model_input": "s tomorrow...",
+      "score": 0.017058729266800077,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 90,
+      "system": "A",
+      "original_text": "Ya lo examine coming so.soon T.T... sianz! Lol... haha ok arh got 6hour enuff bah I hope lol",
+      "model_input": "Ya lo examine coming so.soon T.T... sianz! Lol... haha ok arh got 6hour enuff bah I hope lol",
+      "score": 0.00010932162036164926,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 91,
+      "system": "A",
+      "original_text": "Thanks alot. Really apologetic for disturbing you.",
+      "model_input": "Thanks alot. Really apologetic for disturbing you.",
+      "score": 0.018789311825493083,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 92,
+      "system": "A",
+      "original_text": "big new for sang froid labs ltd  company gets approval for riten syrup to sell in us market which effect sale   cmp  buy for tgt  ",
+      "model_input": "big new for sang froid labs ltd  company gets approval for riten syrup to sell in us market which effect sale   cmp  buy for tgt  ",
+      "score": 0.9369074850246286,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 93,
+      "system": "A",
+      "original_text": "U wanna ask jason whether he free to play?? If he ok then we actuallycan go ur house play.",
+      "model_input": "U wanna ask jason whether he free to play?? If he ok then we actuallycan go ur house play.",
+      "score": 0.0037732571330972007,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 94,
+      "system": "A",
+      "original_text": "Lecture ended early, I'm otw home le.. Will you be home for lunch?",
+      "model_input": "Lecture ended early, I'm otw home le.. Will you be home for lunch?",
+      "score": 0.038325625512430635,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 95,
+      "system": "A",
+      "original_text": "Dad, what time you off work today?",
+      "model_input": "Dad, what time you off work today?",
+      "score": 0.03738868404451081,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 96,
+      "system": "A",
+      "original_text": "My favour will shine on you like the morning sun, and your wounds will be quickly healed. I will always be with you to save you : My presence will protect you on every side. When you pray, I will answer you. When you call to me, I will respond. Isaiah <TIME> ,9 Praise the Lord ! Our GOD is a living GOD who listens to every single prayer of ours. He is ALWAYS with us. Have a blessed day IN CHRIST my dear brothers and sisters:-) :-)",
+      "model_input": "My favour will shine on you like the morning sun, and your wounds will be quickly healed. I will always be with you to save you : My presence will protect you on every side. When you pray, I will answer you. When you call to me, I will respond. Isaiah <TIME> ,9 Praise the Lord ! Our GOD is a living GOD who listens to every single prayer of ours. He is ALWAYS with us. Have a blessed day IN CHRIST my dear brothers and sisters:-) :-)",
+      "score": 0.09446258655247465,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 97,
+      "system": "A",
+      "original_text": "umm just like that  no reason in particular ",
+      "model_input": "umm just like that  no reason in particular ",
+      "score": 0.027956788432177603,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 98,
+      "system": "A",
+      "original_text": "hey i am thinking of upgrading my pc. any good lobang anot?",
+      "model_input": "hey i am thinking of upgrading my pc. any good lobang anot?",
+      "score": 0.007790425455856823,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 99,
+      "system": "A",
+      "original_text": "Anything also can.. u taking bus back to interchange?",
+      "model_input": "Anything also can.. u taking bus back to interchange?",
+      "score": 0.004249200324301456,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 0,
+      "system": "B",
+      "original_text": "",
+      "model_input": "",
+      "score": 0.010358411955798678,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 1,
+      "system": "B",
+      "original_text": " ",
+      "model_input": " ",
+      "score": 0.010358411955798678,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 2,
+      "system": "B",
+      "original_text": "unknownwordzzzz",
+      "model_input": "unknownwordzzzz",
+      "score": 0.019992798560520726,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 3,
+      "system": "B",
+      "original_text": "free free free prize",
+      "model_input": "free free free prize",
+      "score": 0.6515938012666272,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 4,
+      "system": "B",
+      "original_text": "f.r.e.e fr€e freee",
+      "model_input": "f.r.e.e fr€e freee",
+      "score": 0.13917688536249298,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 5,
+      "system": "B",
+      "original_text": "1st 2nd 3rd 4th 101st class",
+      "model_input": "1st 2nd 3rd 4th 101st class",
+      "score": 0.018435169215678945,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 6,
+      "system": "B",
+      "original_text": "Your BOOK is HERE",
+      "model_input": "Your BOOK is HERE",
+      "score": 0.1970949435899028,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 7,
+      "system": "B",
+      "original_text": "coffee tomorrow at 3pm",
+      "model_input": "coffee tomorrow at 3pm",
+      "score": 0.01843940335776026,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 8,
+      "system": "B",
+      "original_text": "https://example.com/free hello@example.org +1 212-555-0199",
+      "model_input": "https://example.com/free hello@example.org +1 212-555-0199",
+      "score": 0.7940501516197943,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 9,
+      "system": "B",
+      "original_text": "___ __proto__ constructor",
+      "model_input": "___ __proto__ constructor",
+      "score": 0.07050468669173,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 10,
+      "system": "B",
+      "original_text": "free\nprize",
+      "model_input": "free\nprize",
+      "score": 0.3821824116775772,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 11,
+      "system": "B",
+      "original_text": "free\tprize",
+      "model_input": "free\tprize",
+      "score": 0.3821824116775772,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 12,
+      "system": "B",
+      "original_text": "free\r\nprize",
+      "model_input": "free\r\nprize",
+      "score": 0.49265334820855927,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 13,
+      "system": "B",
+      "original_text": "free\u001cprize",
+      "model_input": "free\u001cprize",
+      "score": 0.3821824116775772,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 14,
+      "system": "B",
+      "original_text": "free\u001c\u001fprize",
+      "model_input": "free\u001c\u001fprize",
+      "score": 0.49265334820855927,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 15,
+      "system": "B",
+      "original_text": "freeprize",
+      "model_input": "freeprize",
+      "score": 0.3821824116775772,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 16,
+      "system": "B",
+      "original_text": "free prize",
+      "model_input": "free prize",
+      "score": 0.49265334820855927,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 17,
+      "system": "B",
+      "original_text": "free prize",
+      "model_input": "free prize",
+      "score": 0.3821824116775772,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 18,
+      "system": "B",
+      "original_text": "free  prize",
+      "model_input": "free  prize",
+      "score": 0.49265334820855927,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 19,
+      "system": "B",
+      "original_text": "𝒇𝒓𝒆𝒆 prize 😀 café",
+      "model_input": "𝒇𝒓𝒆𝒆 prize 😀 café",
+      "score": 0.15581594402077598,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 20,
+      "system": "B",
+      "original_text": "İI ıſ KKK",
+      "model_input": "İI ıſ KKK",
+      "score": 0.010070580099041852,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 21,
+      "system": "B",
+      "original_text": "ΟΣ ΟΣΑ Σσς",
+      "model_input": "ΟΣ ΟΣΑ Σσς",
+      "score": 0.010358411955798678,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 22,
+      "system": "B",
+      "original_text": "mañana über café",
+      "model_input": "mañana über café",
+      "score": 0.08383417482179757,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 23,
+      "system": "B",
+      "original_text": "你好 免费 prize",
+      "model_input": "你好 免费 prize",
+      "score": 0.19805825144521572,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 24,
+      "system": "B",
+      "original_text": "Ⅻ ² Ⅳ1 ₁2",
+      "model_input": "Ⅻ ² Ⅳ1 ₁2",
+      "score": 0.010358411955798678,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 25,
+      "system": "B",
+      "original_text": "___free___ _a a_",
+      "model_input": "___free___ _a a_",
+      "score": 0.4078668747591639,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 26,
+      "system": "B",
+      "original_text": "a a a a",
+      "model_input": "a a a a",
+      "score": 0.025763528577421993,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 27,
+      "system": "B",
+      "original_text": "free!prize?hello",
+      "model_input": "free!prize?hello",
+      "score": 0.2875822476458247,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 28,
+      "system": "B",
+      "original_text": "Ააბგ ქართული",
+      "model_input": "Ააბგ ქართული",
+      "score": 0.010358411955798678,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 29,
+      "system": "B",
+      "original_text": "😀😀fre€eee😀",
+      "model_input": "😀😀fre€eee😀",
+      "score": 0.02379080388362185,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 30,
+      "system": "B",
+      "original_text": "foo﻿﻿bar",
+      "model_input": "foo﻿﻿bar",
+      "score": 0.016814709467111468,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 31,
+      "system": "B",
+      "original_text": "a b c",
+      "model_input": "a b c",
+      "score": 0.010358411955798678,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 32,
+      "system": "B",
+      "original_text": "free\u000b\fprize",
+      "model_input": "free\u000b\fprize",
+      "score": 0.49265334820855927,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 33,
+      "system": "B",
+      "original_text": "freeᲉprize",
+      "model_input": "freeᲉprize",
+      "score": 0.3821824116775772,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 34,
+      "system": "B",
+      "original_text": "free𐵀prize",
+      "model_input": "free𐵀prize",
+      "score": 0.3821824116775772,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 35,
+      "system": "B",
+      "original_text": "Ok! Mon then! Around say, 1 to 2?",
+      "model_input": "Ok! Mon then! Around say, 1 to 2?",
+      "score": 0.009626806538054793,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 36,
+      "system": "B",
+      "original_text": "want get home painted get free professionals advice  latest trendz  painting services dulux decorator center near sms dulx ",
+      "model_input": "want get home painted get free professionals advice  latest trendz  painting services dulux decorator center near sms dulx ",
+      "score": 0.9543487704060918,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 37,
+      "system": "B",
+      "original_text": "Your access be disable due to unusual transaction with your card To restore your account follow the step on the link WWW applesecure.com",
+      "model_input": "Your access be disable due to unusual transaction with your card To restore your account follow the step on the link WWW applesecure.com",
+      "score": 0.9971128086665179,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 38,
+      "system": "B",
+      "original_text": "Ok.. Ã finishing soon?",
+      "model_input": "Ok.. Ã finishing soon?",
+      "score": 0.0049549610508357374,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 39,
+      "system": "B",
+      "original_text": "Hello 9703XXXX99 Open Trading A C and get benefit worth Rs 85,255 Click here to open A C http://epx9.com WNHWNKKMYHANMZ",
+      "model_input": "Hello 9703XXXX99 Open Trading A C and get benefit worth Rs 85,255 Click here to open A C http://epx9.com WNHWNKKMYHANMZ",
+      "score": 0.9969416602530405,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 40,
+      "system": "B",
+      "original_text": "Omg i'm so sorry I just woke up!!!!!!!! Should I still go><",
+      "model_input": "Omg i'm so sorry I just woke up!!!!!!!! Should I still go><",
+      "score": 0.000691848607795433,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 41,
+      "system": "B",
+      "original_text": "get  discount on min billing of rsalacarte at your nearest pizza hut outletoffer only on ur hdfc bank credit cardtc apply till st aug",
+      "model_input": "get  discount on min billing of rsalacarte at your nearest pizza hut outletoffer only on ur hdfc bank credit cardtc apply till st aug",
+      "score": 0.9981421895236715,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 42,
+      "system": "B",
+      "original_text": "un breakable ultralight composite alloy fiber steel titanium frames shop now get uv kodak lenses worth rs  free www lenskart com kodak lens",
+      "model_input": "un breakable ultralight composite alloy fiber steel titanium frames shop now get uv kodak lenses worth rs  free www lenskart com kodak lens",
+      "score": 0.9533706996802953,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 43,
+      "system": "B",
+      "original_text": "Where is the playhouse?",
+      "model_input": "Where is the playhouse?",
+      "score": 0.0023862978229186455,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 44,
+      "system": "B",
+      "original_text": "U leh, watching tv?",
+      "model_input": "U leh, watching tv?",
+      "score": 0.0038773420333825938,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 45,
+      "system": "B",
+      "original_text": "Hmm. I think she liked her sis one more.  But since that's what dmsaid, they probly need different watch for different occasions..",
+      "model_input": "Hmm. I think she liked her sis one more.  But since that's what dmsaid, they probly need different watch for different occasions..",
+      "score": 0.0033600589778117907,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 46,
+      "system": "B",
+      "original_text": "Reach sch soon! Thanks!(:",
+      "model_input": "Reach sch soon! Thanks!(:",
+      "score": 0.0035764998209763393,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 47,
+      "system": "B",
+      "original_text": "Going hostel. Wan eat together 1st?",
+      "model_input": "Going hostel. Wan eat together 1st?",
+      "score": 0.0034212207357326263,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 48,
+      "system": "B",
+      "original_text": "OK noted :)",
+      "model_input": "OK noted :)",
+      "score": 0.01019663346068439,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 49,
+      "system": "B",
+      "original_text": "you have redeemed   payback points for your shopping and order number is   earn points and redeem them for free shopping with payback click to see all nearby stores httpbitlypbstores tnc",
+      "model_input": "you have redeemed   payback points for your shopping and order number is   earn points and redeem them for free shopping with payback click to see all nearby stores httpbitlypbstores tnc",
+      "score": 0.9980986481241311,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 50,
+      "system": "B",
+      "original_text": "titan festival offer get up to  off on nebula real gold watch with exclusive collection  world of titan  athwalines  lalbunglow  surat ph  tc",
+      "model_input": "titan festival offer get up to  off on nebula real gold watch with exclusive collection  world of titan  athwalines  lalbunglow  surat ph  tc",
+      "score": 0.9926101286459977,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 51,
+      "system": "B",
+      "original_text": "hi, sry abt the delay. my sis is still working on the graphics. cangive us 1 more week?",
+      "model_input": "hi, sry abt the delay. my sis is still working on the graphics. cangive us 1 more week?",
+      "score": 0.01199386514930707,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 52,
+      "system": "B",
+      "original_text": "askmegrocery gift for loyal customers use code quick for flat rs off  extra  mobikwik cashback visit httpwwwaskmegrocerycom min purchase rs",
+      "model_input": "askmegrocery gift for loyal customers use code quick for flat rs off  extra  mobikwik cashback visit httpwwwaskmegrocerycom min purchase rs",
+      "score": 0.9978773071691595,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 53,
+      "system": "B",
+      "original_text": "prapti invites you for upto  off saleshow this sms at cash counter before billing and get addition  discounttc apply contact ",
+      "model_input": "prapti invites you for upto  off saleshow this sms at cash counter before billing and get addition  discounttc apply contact ",
+      "score": 0.9993220918268536,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 54,
+      "system": "B",
+      "original_text": "m chi 22.my i know where Ã¼ stay?",
+      "model_input": "m chi 22.my i know where Ã¼ stay?",
+      "score": 0.005419003501195484,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 55,
+      "system": "B",
+      "original_text": "g summer offer  gb g data at just rs recharge now with rs and enjoy gb gg data valid for  days for more offers dial dial ",
+      "model_input": "g summer offer  gb g data at just rs recharge now with rs and enjoy gb gg data valid for  days for more offers dial dial ",
+      "score": 0.9995454878978823,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 56,
+      "system": "B",
+      "original_text": "Ha! I wouldn't say that I just didn't read anything into way u seemed. I don't like 2 be judgemental....i save that for fridays in the pub!",
+      "model_input": "Ha! I wouldn't say that I just didn't read anything into way u seemed. I don't like 2 be judgemental....i save that for fridays in the pub!",
+      "score": 0.0030167092521685398,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 57,
+      "system": "B",
+      "original_text": "dear member  exclusive rs gift voucher awaits you at the raymond shop valid on a minimum purchase of rs till  apr at select stores code adtaavziuqm  tc call ",
+      "model_input": "dear member  exclusive rs gift voucher awaits you at the raymond shop valid on a minimum purchase of rs till  apr at select stores code adtaavziuqm  tc call ",
+      "score": 0.9976657897623487,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 58,
+      "system": "B",
+      "original_text": "Finally the match heading towards draw as your prediction.",
+      "model_input": "Finally the match heading towards draw as your prediction.",
+      "score": 0.07666404178580928,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 59,
+      "system": "B",
+      "original_text": "dear mr addy  you have  trident privilege points on your membership number   as on th november to redeem your points  activate your membership by writing to tridentprivilegetridenthotelscom",
+      "model_input": "dear mr addy  you have  trident privilege points on your membership number   as on th november to redeem your points  activate your membership by writing to tridentprivilegetridenthotelscom",
+      "score": 0.968899913090872,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 60,
+      "system": "B",
+      "original_text": "Hahah yup im going slow when reaching humps hahaha",
+      "model_input": "Hahah yup im going slow when reaching humps hahaha",
+      "score": 0.0010241290361043516,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 61,
+      "system": "B",
+      "original_text": "Ok. Then who reach go buy tix first. Dinner, me anything. Depends u wan eat w ur parents or not lor.",
+      "model_input": "Ok. Then who reach go buy tix first. Dinner, me anything. Depends u wan eat w ur parents or not lor.",
+      "score": 0.0017754758877541197,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 62,
+      "system": "B",
+      "original_text": "have you tried bigbasket express yet be it fresh fruits  vegetables  bread or dairy  get them all delievered in  mins order now  httpgooglrmis",
+      "model_input": "have you tried bigbasket express yet be it fresh fruits  vegetables  bread or dairy  get them all delievered in  mins order now  httpgooglrmis",
+      "score": 0.954099378437215,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 63,
+      "system": "B",
+      "original_text": "Did you wait three hours and make it through? ",
+      "model_input": "Did you wait three hours and make it through? ",
+      "score": 0.04511381853627251,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 64,
+      "system": "B",
+      "original_text": "No no why are you sorry you don't have to do anything! Go goconcentrate, here's two square brackets for you:[] haha (:",
+      "model_input": "No no why are you sorry you don't have to do anything! Go goconcentrate, here's two square brackets for you:[] haha (:",
+      "score": 0.006722727710715347,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 65,
+      "system": "B",
+      "original_text": "Okay... my next stop is novena... where is that? Behind the mrt ah?",
+      "model_input": "Okay... my next stop is novena... where is that? Behind the mrt ah?",
+      "score": 0.0020552352361154756,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 66,
+      "system": "B",
+      "original_text": "dear sir  as per discussed with you regarding the lutron automation but as i am out of the kit of the same product so i would like to request you please make it on some another day  im really very sorry for the inconvenience  regards nirmal kumar  ",
+      "model_input": "dear sir  as per discussed with you regarding the lutron automation but as i am out of the kit of the same product so i would like to request you please make it on some another day  im really very sorry for the inconvenience  regards nirmal kumar  ",
+      "score": 0.6159558222227127,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 67,
+      "system": "B",
+      "original_text": "Your CommBank account have be block to lift the restriction click here to re-verify your account http://comm-99ae7.web.app/",
+      "model_input": "Your CommBank account have be block to lift the restriction click here to re-verify your account http://comm-99ae7.web.app/",
+      "score": 0.9978711784436936,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 68,
+      "system": "B",
+      "original_text": "Oh nvm I shall wear jeans!",
+      "model_input": "Oh nvm I shall wear jeans!",
+      "score": 0.01085441336661988,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 69,
+      "system": "B",
+      "original_text": "1000's of girls many local 2 u who r virgins 2 this & r ready 2 4fil ur every sexual need. Can u 4fil theirs? text CUTE to 69911(??1.50p. m)",
+      "model_input": "1000's of girls many local 2 u who r virgins 2 this & r ready 2 4fil ur every sexual need. Can u 4fil theirs? text CUTE to 69911(??1.50p. m)",
+      "score": 0.5653415982905141,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 70,
+      "system": "B",
+      "original_text": "will be back on wed",
+      "model_input": "will be back on wed",
+      "score": 0.0845090467781583,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 71,
+      "system": "B",
+      "original_text": "L3 Level hiring in TOP Noida Bpo with 18k inhand sal+inc+US insurance C.service.Call us as limited seats available.Uk & Dayshift also available.Sonam/9871389382",
+      "model_input": "L3 Level hiring in TOP Noida Bpo with 18k inhand sal+inc+US insurance C.service.Call us as limited seats available.Uk & Dayshift also available.Sonam/9871389382",
+      "score": 0.9590621330934651,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 72,
+      "system": "B",
+      "original_text": "There is a kind of conditioner in pet's central that is for calciumfor terrapin's shell.",
+      "model_input": "There is a kind of conditioner in pet's central that is for calciumfor terrapin's shell.",
+      "score": 0.11233181811741831,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 73,
+      "system": "B",
+      "original_text": "Which mods are u appealing? Proj management n is consulting?",
+      "model_input": "Which mods are u appealing? Proj management n is consulting?",
+      "score": 0.026120770449661275,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 74,
+      "system": "B",
+      "original_text": "yayfound a way to nt chg date. help u do next time we meet",
+      "model_input": "yayfound a way to nt chg date. help u do next time we meet",
+      "score": 0.019828346115322568,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 75,
+      "system": "B",
+      "original_text": "Happy birthday! I'm on your bus =P",
+      "model_input": "Happy birthday! I'm on your bus =P",
+      "score": 0.019004435538762993,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 76,
+      "system": "B",
+      "original_text": "I doing my part now, more or less I know what to write, just need todiscuss with every1 for how complex abdomen make sure all parts rcoherent.  <#>  u want or not? Lidat can make jaime come out withsomething lor.",
+      "model_input": "I doing my part now, more or less I know what to write, just need todiscuss with every1 for how complex abdomen make sure all parts rcoherent.  <#>  u want or not? Lidat can make jaime come out withsomething lor.",
+      "score": 0.04145454299648283,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 77,
+      "system": "B",
+      "original_text": "OMG I'M NOT GONNA BE HOMELESS",
+      "model_input": "OMG I'M NOT GONNA BE HOMELESS",
+      "score": 0.00812171480562252,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 78,
+      "system": "B",
+      "original_text": "avail zero fee benefit with special rates offers on new  transfer of loan  home loan    lap    od  cc  bg    call ",
+      "model_input": "avail zero fee benefit with special rates offers on new  transfer of loan  home loan    lap    od  cc  bg    call ",
+      "score": 0.9913669918203172,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 79,
+      "system": "B",
+      "original_text": "I wont do anything de.",
+      "model_input": "I wont do anything de.",
+      "score": 0.008124832087950385,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 80,
+      "system": "B",
+      "original_text": "Dear dun worry la.  I think he still at his home. Kisses for u.:-)",
+      "model_input": "Dear dun worry la.  I think he still at his home. Kisses for u.:-)",
+      "score": 0.007405307495532919,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 81,
+      "system": "B",
+      "original_text": "Dear customer Your SBI account have be block Please update your KYC in click here link http://bit.ly/3ztGQYI SBIBANK",
+      "model_input": "Dear customer Your SBI account have be block Please update your KYC in click here link http://bit.ly/3ztGQYI SBIBANK",
+      "score": 0.9998530213871072,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 82,
+      "system": "B",
+      "original_text": "My hd spoilt",
+      "model_input": "My hd spoilt",
+      "score": 0.02163875686319609,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 83,
+      "system": "B",
+      "original_text": "dominos cheesy  crunchy offerget  off on double cheese crunch pizza on min bill of  todayorder online dominoscoin cpn crmab tc",
+      "model_input": "dominos cheesy  crunchy offerget  off on double cheese crunch pizza on min bill of  todayorder online dominoscoin cpn crmab tc",
+      "score": 0.9755915373481455,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 84,
+      "system": "B",
+      "original_text": "my sawa offers  specially for you  dial  or visit  httpwwwaljawalnetsaprimarymysawaoffer   for free to know your offers now   subscribe today and have a chance to win a mercedes car   to change your  language to english please send l to ",
+      "model_input": "my sawa offers  specially for you  dial  or visit  httpwwwaljawalnetsaprimarymysawaoffer   for free to know your offers now   subscribe today and have a chance to win a mercedes car   to change your  language to english please send l to ",
+      "score": 0.999867306847363,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 85,
+      "system": "B",
+      "original_text": "Hey what how about your project. Started aha da.",
+      "model_input": "Hey what how about your project. Started aha da.",
+      "score": 0.008733820658039262,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 86,
+      "system": "B",
+      "original_text": "With my friends... So sad... Goin back today...",
+      "model_input": "With my friends... So sad... Goin back today...",
+      "score": 0.0011552631398796143,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 87,
+      "system": "B",
+      "original_text": "yeah im invited., but im not sure if i cud make it., since my tai ami expired and now my taya abbu is also hospitalized in serious condition., my mom and dad stay over there at night in the hospital.,",
+      "model_input": "yeah im invited., but im not sure if i cud make it., since my tai ami expired and now my taya abbu is also hospitalized in serious condition., my mom and dad stay over there at night in the hospital.,",
+      "score": 0.07711232908716295,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 88,
+      "system": "B",
+      "original_text": "Baskin Robbins introduces hot fresh waffle with a scoop of your favourite ice cream from just Rs XX onwards For more detail click",
+      "model_input": "Baskin Robbins introduces hot fresh waffle with a scoop of your favourite ice cream from just Rs XX onwards For more detail click",
+      "score": 0.9870407564190383,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 89,
+      "system": "B",
+      "original_text": "s tomorrow...",
+      "model_input": "s tomorrow...",
+      "score": 0.0032036798771395876,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 90,
+      "system": "B",
+      "original_text": "Ya lo examine coming so.soon T.T... sianz! Lol... haha ok arh got 6hour enuff bah I hope lol",
+      "model_input": "Ya lo examine coming so.soon T.T... sianz! Lol... haha ok arh got 6hour enuff bah I hope lol",
+      "score": 0.0007055003958228468,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 91,
+      "system": "B",
+      "original_text": "Thanks alot. Really apologetic for disturbing you.",
+      "model_input": "Thanks alot. Really apologetic for disturbing you.",
+      "score": 0.023237098638571974,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 92,
+      "system": "B",
+      "original_text": "big new for sang froid labs ltd  company gets approval for riten syrup to sell in us market which effect sale   cmp  buy for tgt  ",
+      "model_input": "big new for sang froid labs ltd  company gets approval for riten syrup to sell in us market which effect sale   cmp  buy for tgt  ",
+      "score": 0.9427554081938262,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 93,
+      "system": "B",
+      "original_text": "U wanna ask jason whether he free to play?? If he ok then we actuallycan go ur house play.",
+      "model_input": "U wanna ask jason whether he free to play?? If he ok then we actuallycan go ur house play.",
+      "score": 0.0035683629285561376,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 94,
+      "system": "B",
+      "original_text": "Lecture ended early, I'm otw home le.. Will you be home for lunch?",
+      "model_input": "Lecture ended early, I'm otw home le.. Will you be home for lunch?",
+      "score": 0.010884938239985617,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 95,
+      "system": "B",
+      "original_text": "Dad, what time you off work today?",
+      "model_input": "Dad, what time you off work today?",
+      "score": 0.021583390208433043,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 96,
+      "system": "B",
+      "original_text": "My favour will shine on you like the morning sun, and your wounds will be quickly healed. I will always be with you to save you : My presence will protect you on every side. When you pray, I will answer you. When you call to me, I will respond. Isaiah <TIME> ,9 Praise the Lord ! Our GOD is a living GOD who listens to every single prayer of ours. He is ALWAYS with us. Have a blessed day IN CHRIST my dear brothers and sisters:-) :-)",
+      "model_input": "My favour will shine on you like the morning sun, and your wounds will be quickly healed. I will always be with you to save you : My presence will protect you on every side. When you pray, I will answer you. When you call to me, I will respond. Isaiah <TIME> ,9 Praise the Lord ! Our GOD is a living GOD who listens to every single prayer of ours. He is ALWAYS with us. Have a blessed day IN CHRIST my dear brothers and sisters:-) :-)",
+      "score": 0.143735140358346,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 97,
+      "system": "B",
+      "original_text": "umm just like that  no reason in particular ",
+      "model_input": "umm just like that  no reason in particular ",
+      "score": 0.038362443328781824,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 98,
+      "system": "B",
+      "original_text": "hey i am thinking of upgrading my pc. any good lobang anot?",
+      "model_input": "hey i am thinking of upgrading my pc. any good lobang anot?",
+      "score": 0.006855307141800093,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 99,
+      "system": "B",
+      "original_text": "Anything also can.. u taking bus back to interchange?",
+      "model_input": "Anything also can.. u taking bus back to interchange?",
+      "score": 0.005595809052156465,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 0,
+      "system": "C",
+      "original_text": "",
+      "model_input": "",
+      "score": 0.050287836134838185,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 1,
+      "system": "C",
+      "original_text": " ",
+      "model_input": " ",
+      "score": 0.050287836134838185,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 2,
+      "system": "C",
+      "original_text": "unknownwordzzzz",
+      "model_input": "unknownwordzzzz",
+      "score": 0.050287836134838185,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 3,
+      "system": "C",
+      "original_text": "free free free prize",
+      "model_input": "free free free prize",
+      "score": 0.42981338297416793,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 4,
+      "system": "C",
+      "original_text": "f.r.e.e fr€e freee",
+      "model_input": "f.r.e.e fr€e freee",
+      "score": 0.06319750653832659,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 5,
+      "system": "C",
+      "original_text": "1st 2nd 3rd 4th 101st class",
+      "model_input": "1st 2nd 3rd 4th 101st class",
+      "score": 0.015865210093589883,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 6,
+      "system": "C",
+      "original_text": "Your BOOK is HERE",
+      "model_input": "Your BOOK is HERE",
+      "score": 0.520594486735615,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 7,
+      "system": "C",
+      "original_text": "coffee tomorrow at 3pm",
+      "model_input": "coffee tomorrow at 3pm",
+      "score": 0.03572551973572912,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 8,
+      "system": "C",
+      "original_text": "https://example.com/free hello@example.org +1 212-555-0199",
+      "model_input": "https://example.com/free hello@example.org +1 212-555-0199",
+      "score": 0.914748189751635,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 9,
+      "system": "C",
+      "original_text": "___ __proto__ constructor",
+      "model_input": "___ __proto__ constructor",
+      "score": 0.050287836134838185,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 10,
+      "system": "C",
+      "original_text": "free\nprize",
+      "model_input": "free\nprize",
+      "score": 0.7116868625998062,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 11,
+      "system": "C",
+      "original_text": "free\tprize",
+      "model_input": "free\tprize",
+      "score": 0.7116868625998062,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 12,
+      "system": "C",
+      "original_text": "free\r\nprize",
+      "model_input": "free\r\nprize",
+      "score": 0.7116868625998062,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 13,
+      "system": "C",
+      "original_text": "free\u001cprize",
+      "model_input": "free\u001cprize",
+      "score": 0.7116868625998062,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 14,
+      "system": "C",
+      "original_text": "free\u001c\u001fprize",
+      "model_input": "free\u001c\u001fprize",
+      "score": 0.7116868625998062,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 15,
+      "system": "C",
+      "original_text": "freeprize",
+      "model_input": "freeprize",
+      "score": 0.7116868625998062,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 16,
+      "system": "C",
+      "original_text": "free prize",
+      "model_input": "free prize",
+      "score": 0.7116868625998062,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 17,
+      "system": "C",
+      "original_text": "free prize",
+      "model_input": "free prize",
+      "score": 0.7116868625998062,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 18,
+      "system": "C",
+      "original_text": "free  prize",
+      "model_input": "free  prize",
+      "score": 0.7116868625998062,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 19,
+      "system": "C",
+      "original_text": "𝒇𝒓𝒆𝒆 prize 😀 café",
+      "model_input": "𝒇𝒓𝒆𝒆 prize 😀 café",
+      "score": 0.31672937890963154,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 20,
+      "system": "C",
+      "original_text": "İI ıſ KKK",
+      "model_input": "İI ıſ KKK",
+      "score": 0.050287836134838185,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 21,
+      "system": "C",
+      "original_text": "ΟΣ ΟΣΑ Σσς",
+      "model_input": "ΟΣ ΟΣΑ Σσς",
+      "score": 0.050287836134838185,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 22,
+      "system": "C",
+      "original_text": "mañana über café",
+      "model_input": "mañana über café",
+      "score": 0.050287836134838185,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 23,
+      "system": "C",
+      "original_text": "你好 免费 prize",
+      "model_input": "你好 免费 prize",
+      "score": 0.31672937890963154,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 24,
+      "system": "C",
+      "original_text": "Ⅻ ² Ⅳ1 ₁2",
+      "model_input": "Ⅻ ² Ⅳ1 ₁2",
+      "score": 0.050287836134838185,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 25,
+      "system": "C",
+      "original_text": "___free___ _a a_",
+      "model_input": "___free___ _a a_",
+      "score": 0.050287836134838185,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 26,
+      "system": "C",
+      "original_text": "a a a a",
+      "model_input": "a a a a",
+      "score": 0.050287836134838185,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 27,
+      "system": "C",
+      "original_text": "free!prize?hello",
+      "model_input": "free!prize?hello",
+      "score": 0.6959470279492421,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 28,
+      "system": "C",
+      "original_text": "Ააბგ ქართული",
+      "model_input": "Ააბგ ქართული",
+      "score": 0.050287836134838185,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 29,
+      "system": "C",
+      "original_text": "😀😀fre€eee😀",
+      "model_input": "😀😀fre€eee😀",
+      "score": 0.057241298856557155,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 30,
+      "system": "C",
+      "original_text": "foo﻿﻿bar",
+      "model_input": "fo﻿﻿bar",
+      "score": 0.09485762284855571,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 31,
+      "system": "C",
+      "original_text": "a b c",
+      "model_input": "a b c",
+      "score": 0.050287836134838185,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 32,
+      "system": "C",
+      "original_text": "free\u000b\fprize",
+      "model_input": "free\u000b\fprize",
+      "score": 0.7116868625998062,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 33,
+      "system": "C",
+      "original_text": "freeᲉprize",
+      "model_input": "freeᲉprize",
+      "score": 0.7116868625998062,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 34,
+      "system": "C",
+      "original_text": "free𐵀prize",
+      "model_input": "free𐵀prize",
+      "score": 0.7116868625998062,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 35,
+      "system": "C",
+      "original_text": "Ok! Mon then! Around say, 1 to 2?",
+      "model_input": "Ok! Mon then! Around say, 1 to 2?",
+      "score": 0.0045223747387979985,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 36,
+      "system": "C",
+      "original_text": "want get home painted get free professionals advice  latest trendz  painting services dulux decorator center near sms dulx ",
+      "model_input": "want get home painted get free professionals advice  latest trendz  painting services dulux decorator center near sms dulx ",
+      "score": 0.9539084776890184,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 37,
+      "system": "C",
+      "original_text": "Your access be disable due to unusual transaction with your card To restore your account follow the step on the link WWW applesecure.com",
+      "model_input": "Your access be disable due to unusual transaction with your card To restore your account follow the step on the link WWW applesecure.com",
+      "score": 0.9954453357715869,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 38,
+      "system": "C",
+      "original_text": "Ok.. Ã finishing soon?",
+      "model_input": "Ok.. Ã finishing soon?",
+      "score": 0.005409921898284346,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 39,
+      "system": "C",
+      "original_text": "Hello 9703XXXX99 Open Trading A C and get benefit worth Rs 85,255 Click here to open A C http://epx9.com WNHWNKKMYHANMZ",
+      "model_input": "Hello 9703XXXX99 Open Trading A C and get benefit worth Rs 85,255 Click here to open A C http://epx9.com WNHWNKKMYHANMZ",
+      "score": 0.9972641883463446,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 40,
+      "system": "C",
+      "original_text": "Omg i'm so sorry I just woke up!!!!!!!! Should I still go><",
+      "model_input": "Omg i'm so sorry I just woke up!!!!!!!! Should I still go><",
+      "score": 0.0011115061416292259,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 41,
+      "system": "C",
+      "original_text": "get  discount on min billing of rsalacarte at your nearest pizza hut outletoffer only on ur hdfc bank credit cardtc apply till st aug",
+      "model_input": "get  discount on min billing of rsalacarte at your nearest pizza hut outletoffer only on ur hdfc bank credit cardtc apply till st aug",
+      "score": 0.9923580541980541,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 42,
+      "system": "C",
+      "original_text": "un breakable ultralight composite alloy fiber steel titanium frames shop now get uv kodak lenses worth rs  free www lenskart com kodak lens",
+      "model_input": "un breakable ultralight composite alloy fiber steel titanium frames shop now get uv kodak lenses worth rs  free www lenskart com kodak lens",
+      "score": 0.9799047046278787,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 43,
+      "system": "C",
+      "original_text": "Where is the playhouse?",
+      "model_input": "Where is the playhouse?",
+      "score": 0.008901502036190197,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 44,
+      "system": "C",
+      "original_text": "U leh, watching tv?",
+      "model_input": "U leh, watching tv?",
+      "score": 0.0159958152983847,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 45,
+      "system": "C",
+      "original_text": "Hmm. I think she liked her sis one more.  But since that's what dmsaid, they probly need different watch for different occasions..",
+      "model_input": "Hmm. I think she liked her sis one more.  But since that's what dmsaid, they probly need different watch for different occasions..",
+      "score": 0.002212088468725297,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 46,
+      "system": "C",
+      "original_text": "Reach sch soon! Thanks!(:",
+      "model_input": "Reach sch soon! Thanks!(:",
+      "score": 0.007289152273926599,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 47,
+      "system": "C",
+      "original_text": "Going hostel. Wan eat together 1st?",
+      "model_input": "Going hostel. Wan eat together 1st?",
+      "score": 0.00350459420578191,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 48,
+      "system": "C",
+      "original_text": "OK noted :)",
+      "model_input": "OK noted :)",
+      "score": 0.00856278818077537,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 49,
+      "system": "C",
+      "original_text": "you have redeemed   payback points for your shopping and order number is   earn points and redeem them for free shopping with payback click to see all nearby stores httpbitlypbstores tnc",
+      "model_input": "you have redeemed   payback points for your shopping and order number is   earn points and redeem them for free shopping with payback click to see all nearby stores httpbitlypbstores tnc",
+      "score": 0.9885199014315256,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 50,
+      "system": "C",
+      "original_text": "titan festival offer get up to  off on nebula real gold watch with exclusive collection  world of titan  athwalines  lalbunglow  surat ph  tc",
+      "model_input": "titan festival offer get up to  off on nebula real gold watch with exclusive collection  world of titan  athwalines  lalbunglow  surat ph  tc",
+      "score": 0.9895062866655906,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 51,
+      "system": "C",
+      "original_text": "hi, sry abt the delay. my sis is still working on the graphics. cangive us 1 more week?",
+      "model_input": "hi, sry abt the delay. my sis is still working on the graphics. cangive us 1 more week?",
+      "score": 0.023861894273041594,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 52,
+      "system": "C",
+      "original_text": "askmegrocery gift for loyal customers use code quick for flat rs off  extra  mobikwik cashback visit httpwwwaskmegrocerycom min purchase rs",
+      "model_input": "askmegrocery gift for loyal customers use code quick for flat rs off  extra  mobikwik cashback visit httpwwwaskmegrocerycom min purchase rs",
+      "score": 0.9938980250591845,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 53,
+      "system": "C",
+      "original_text": "prapti invites you for upto  off saleshow this sms at cash counter before billing and get addition  discounttc apply contact ",
+      "model_input": "prapti invites you for upto  off saleshow this sms at cash counter before billing and get addition  discounttc apply contact ",
+      "score": 0.9949477622333326,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 54,
+      "system": "C",
+      "original_text": "m chi 22.my i know where Ã¼ stay?",
+      "model_input": "m chi 22.my i know where Ã¼ stay?",
+      "score": 0.010099621574553646,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 55,
+      "system": "C",
+      "original_text": "g summer offer  gb g data at just rs recharge now with rs and enjoy gb gg data valid for  days for more offers dial dial ",
+      "model_input": "g summer offer  gb g data at just rs recharge now with rs and enjoy gb gg data valid for  days for more offers dial dial ",
+      "score": 0.9996563334471669,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 56,
+      "system": "C",
+      "original_text": "Ha! I wouldn't say that I just didn't read anything into way u seemed. I don't like 2 be judgemental....i save that for fridays in the pub!",
+      "model_input": "Ha! I wouldn't say that I just didn't read anything into way u seemed. I don't like 2 be judgemental....i save that for fridays in the pub!",
+      "score": 0.019704280483341226,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 57,
+      "system": "C",
+      "original_text": "dear member  exclusive rs gift voucher awaits you at the raymond shop valid on a minimum purchase of rs till  apr at select stores code adtaavziuqm  tc call ",
+      "model_input": "dear member  exclusive rs gift voucher awaits you at the raymond shop valid on a minimum purchase of rs till  apr at select stores code adtaavziuqm  tc call ",
+      "score": 0.9962580155536155,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 58,
+      "system": "C",
+      "original_text": "Finally the match heading towards draw as your prediction.",
+      "model_input": "Finally the match heading towards draw as your prediction.",
+      "score": 0.15249256625673405,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 59,
+      "system": "C",
+      "original_text": "dear mr addy  you have  trident privilege points on your membership number   as on th november to redeem your points  activate your membership by writing to tridentprivilegetridenthotelscom",
+      "model_input": "dear mr addy  you have  trident privilege points on your membership number   as on th november to redeem your points  activate your membership by writing to tridentprivilegetridenthotelscom",
+      "score": 0.9823676284003963,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 60,
+      "system": "C",
+      "original_text": "Hahah yup im going slow when reaching humps hahaha",
+      "model_input": "Hahah yup im going slow when reaching humps hahaha",
+      "score": 0.001226554207089433,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 61,
+      "system": "C",
+      "original_text": "Ok. Then who reach go buy tix first. Dinner, me anything. Depends u wan eat w ur parents or not lor.",
+      "model_input": "Ok. Then who reach go buy tix first. Dinner, me anything. Depends u wan eat w ur parents or not lor.",
+      "score": 0.0015835032927956612,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 62,
+      "system": "C",
+      "original_text": "have you tried bigbasket express yet be it fresh fruits  vegetables  bread or dairy  get them all delievered in  mins order now  httpgooglrmis",
+      "model_input": "have you tried bigbasket express yet be it fresh fruits  vegetables  bread or dairy  get them all delievered in  mins order now  httpgooglrmis",
+      "score": 0.7088242144533733,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 63,
+      "system": "C",
+      "original_text": "Did you wait three hours and make it through? ",
+      "model_input": "Did you wait three hours and make it through? ",
+      "score": 0.051350501229673225,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 64,
+      "system": "C",
+      "original_text": "No no why are you sorry you don't have to do anything! Go goconcentrate, here's two square brackets for you:[] haha (:",
+      "model_input": "No no why are you sorry you don't have to do anything! Go goconcentrate, here's two square brackets for you:[] haha (:",
+      "score": 0.00399634259109876,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 65,
+      "system": "C",
+      "original_text": "Okay... my next stop is novena... where is that? Behind the mrt ah?",
+      "model_input": "Okay... my next stop is novena... where is that? Behind the mrt ah?",
+      "score": 0.004098602767236515,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 66,
+      "system": "C",
+      "original_text": "dear sir  as per discussed with you regarding the lutron automation but as i am out of the kit of the same product so i would like to request you please make it on some another day  im really very sorry for the inconvenience  regards nirmal kumar  ",
+      "model_input": "dear sir  as per discussed with you regarding the lutron automation but as i am out of the kit of the same product so i would like to request you please make it on some another day  im really very sorry for the inconvenience  regards nirmal kumar  ",
+      "score": 0.3268508886352296,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 67,
+      "system": "C",
+      "original_text": "Your CommBank account have be block to lift the restriction click here to re-verify your account http://comm-99ae7.web.app/",
+      "model_input": "Your CommBank account have be block to lift the restriction click here to re-verify your account http://comm-99ae7.web.app/",
+      "score": 0.9974901102151957,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 68,
+      "system": "C",
+      "original_text": "Oh nvm I shall wear jeans!",
+      "model_input": "Oh nvm I shall wear jeans!",
+      "score": 0.009080975761482559,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 69,
+      "system": "C",
+      "original_text": "1000's of girls many local 2 u who r virgins 2 this & r ready 2 4fil ur every sexual need. Can u 4fil theirs? text CUTE to 69911(??1.50p. m)",
+      "model_input": "1000's of girls many local 2 u who r virgins 2 this & r ready 2 4fil ur every sexual need. Can u 4fil theirs? text CUTE to 69911(??1.50p. m)",
+      "score": 0.6707780328380389,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 70,
+      "system": "C",
+      "original_text": "will be back on wed",
+      "model_input": "will be back on wed",
+      "score": 0.08431340590265159,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 71,
+      "system": "C",
+      "original_text": "L3 Level hiring in TOP Noida Bpo with 18k inhand sal+inc+US insurance C.service.Call us as limited seats available.Uk & Dayshift also available.Sonam/9871389382",
+      "model_input": "L3 Level hiring in TOP Noida Bpo with 18k inhand sal+inc+US insurance C.service.Call us as limited seats available.Uk & Dayshift also available.Sonam/9871389382",
+      "score": 0.9847531901427229,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 72,
+      "system": "C",
+      "original_text": "There is a kind of conditioner in pet's central that is for calciumfor terrapin's shell.",
+      "model_input": "There is a kind of conditioner in pet's central that is for calciumfor terrapin's shell.",
+      "score": 0.06040449224853187,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 73,
+      "system": "C",
+      "original_text": "Which mods are u appealing? Proj management n is consulting?",
+      "model_input": "Which mods are u appealing? Proj management n is consulting?",
+      "score": 0.019176290779519895,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 74,
+      "system": "C",
+      "original_text": "yayfound a way to nt chg date. help u do next time we meet",
+      "model_input": "yayfound a way to nt chg date. help u do next time we meet",
+      "score": 0.0263949423370601,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 75,
+      "system": "C",
+      "original_text": "Happy birthday! I'm on your bus =P",
+      "model_input": "Happy birthday! I'm on your bus =P",
+      "score": 0.09911948636168802,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 76,
+      "system": "C",
+      "original_text": "I doing my part now, more or less I know what to write, just need todiscuss with every1 for how complex abdomen make sure all parts rcoherent.  <#>  u want or not? Lidat can make jaime come out withsomething lor.",
+      "model_input": "I doing my part now, more or less I know what to write, just need todiscuss with every1 for how complex abdomen make sure all parts rcoherent.  <#>  u want or not? Lidat can make jaime come out withsomething lor.",
+      "score": 0.0225755372789382,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 77,
+      "system": "C",
+      "original_text": "OMG I'M NOT GONNA BE HOMELESS",
+      "model_input": "OMG I'M NOT GONNA BE HOMELESS",
+      "score": 0.026329834503125267,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 78,
+      "system": "C",
+      "original_text": "avail zero fee benefit with special rates offers on new  transfer of loan  home loan    lap    od  cc  bg    call ",
+      "model_input": "avail zero fee benefit with special rates offers on new  transfer of loan  home loan    lap    od  cc  bg    call ",
+      "score": 0.9900421738639428,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 79,
+      "system": "C",
+      "original_text": "I wont do anything de.",
+      "model_input": "I wont do anything de.",
+      "score": 0.012997257070273207,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 80,
+      "system": "C",
+      "original_text": "Dear dun worry la.  I think he still at his home. Kisses for u.:-)",
+      "model_input": "Dear dun worry la.  I think he still at his home. Kisses for u.:-)",
+      "score": 0.01213924909797711,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 81,
+      "system": "C",
+      "original_text": "Dear customer Your SBI account have be block Please update your KYC in click here link http://bit.ly/3ztGQYI SBIBANK",
+      "model_input": "Dear customer Your SBI account have be block Please update your KYC in click here link http://bit.ly/3ztGQYI SBIBANK",
+      "score": 0.999946747082261,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 82,
+      "system": "C",
+      "original_text": "My hd spoilt",
+      "model_input": "My hd spoilt",
+      "score": 0.02549658744270345,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 83,
+      "system": "C",
+      "original_text": "dominos cheesy  crunchy offerget  off on double cheese crunch pizza on min bill of  todayorder online dominoscoin cpn crmab tc",
+      "model_input": "dominos cheesy  crunchy offerget  off on double cheese crunch pizza on min bill of  todayorder online dominoscoin cpn crmab tc",
+      "score": 0.9742512697273238,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 84,
+      "system": "C",
+      "original_text": "my sawa offers  specially for you  dial  or visit  httpwwwaljawalnetsaprimarymysawaoffer   for free to know your offers now   subscribe today and have a chance to win a mercedes car   to change your  language to english please send l to ",
+      "model_input": "my sawa offers  specially for you  dial  or visit  httpwwwaljawalnetsaprimarymysawaoffer   for free to know your offers now   subscribe today and have a chance to win a mercedes car   to change your  language to english please send l to ",
+      "score": 0.9935837755396536,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 85,
+      "system": "C",
+      "original_text": "Hey what how about your project. Started aha da.",
+      "model_input": "Hey what how about your project. Started aha da.",
+      "score": 0.008716263428918125,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 86,
+      "system": "C",
+      "original_text": "With my friends... So sad... Goin back today...",
+      "model_input": "With my friends... So sad... Goin back today...",
+      "score": 0.016751002960324307,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 87,
+      "system": "C",
+      "original_text": "yeah im invited., but im not sure if i cud make it., since my tai ami expired and now my taya abbu is also hospitalized in serious condition., my mom and dad stay over there at night in the hospital.,",
+      "model_input": "yeah im invited., but im not sure if i cud make it., since my tai ami expired and now my taya abbu is also hospitalized in serious condition., my mom and dad stay over there at night in the hospital.,",
+      "score": 0.010435591347965657,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 88,
+      "system": "C",
+      "original_text": "Baskin Robbins introduces hot fresh waffle with a scoop of your favourite ice cream from just Rs XX onwards For more detail click",
+      "model_input": "Baskin Robbins introduces hot fresh waffle with a scoop of your favourite ice cream from just Rs XX onwards For more detail click",
+      "score": 0.997624362967294,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 89,
+      "system": "C",
+      "original_text": "s tomorrow...",
+      "model_input": "s tomorrow...",
+      "score": 0.01813301145839223,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 90,
+      "system": "C",
+      "original_text": "Ya lo examine coming so.soon T.T... sianz! Lol... haha ok arh got 6hour enuff bah I hope lol",
+      "model_input": "Ya lo examine coming so.soon T.T... sianz! Lol... haha ok arh got 6hour enuff bah I hope lol",
+      "score": 0.00010825575302270959,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 91,
+      "system": "C",
+      "original_text": "Thanks alot. Really apologetic for disturbing you.",
+      "model_input": "Thanks alot. Really apologetic for disturbing you.",
+      "score": 0.018813278014172798,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 92,
+      "system": "C",
+      "original_text": "big new for sang froid labs ltd  company gets approval for riten syrup to sell in us market which effect sale   cmp  buy for tgt  ",
+      "model_input": "big new for sang froid labs ltd  company gets approval for riten syrup to sell in us market which effect sale   cmp  buy for tgt  ",
+      "score": 0.9370645258762714,
+      "prediction": "spam"
+    },
+    {
+      "case_id": 93,
+      "system": "C",
+      "original_text": "U wanna ask jason whether he free to play?? If he ok then we actuallycan go ur house play.",
+      "model_input": "U wanna ask jason whether he free to play?? If he ok then we actuallycan go ur house play.",
+      "score": 0.0038298404164624805,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 94,
+      "system": "C",
+      "original_text": "Lecture ended early, I'm otw home le.. Will you be home for lunch?",
+      "model_input": "Lecture ended early, I'm otw home le.. Will you be home for lunch?",
+      "score": 0.038533805429375505,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 95,
+      "system": "C",
+      "original_text": "Dad, what time you off work today?",
+      "model_input": "Dad, what time you off work today?",
+      "score": 0.037520508583679876,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 96,
+      "system": "C",
+      "original_text": "My favour will shine on you like the morning sun, and your wounds will be quickly healed. I will always be with you to save you : My presence will protect you on every side. When you pray, I will answer you. When you call to me, I will respond. Isaiah <TIME> ,9 Praise the Lord ! Our GOD is a living GOD who listens to every single prayer of ours. He is ALWAYS with us. Have a blessed day IN CHRIST my dear brothers and sisters:-) :-)",
+      "model_input": "My favour will shine on you like the morning sun, and your wounds will be quickly healed. I will always be with you to save you : My presence will protect you on every side. When you pray, I will answer you. When you call to me, I will respond. Isaiah <TIME> ,9 Praise the Lord ! Our GOD is a living GOD who listens to every single prayer of ours. He is ALWAYS with us. Have a blessed day IN CHRIST my dear brothers and sisters:-) :-)",
+      "score": 0.09350227857195909,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 97,
+      "system": "C",
+      "original_text": "umm just like that  no reason in particular ",
+      "model_input": "umm just like that  no reason in particular ",
+      "score": 0.027987827189208735,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 98,
+      "system": "C",
+      "original_text": "hey i am thinking of upgrading my pc. any good lobang anot?",
+      "model_input": "hey i am thinking of upgrading my pc. any good lobang anot?",
+      "score": 0.007714624139351973,
+      "prediction": "ham"
+    },
+    {
+      "case_id": 99,
+      "system": "C",
+      "original_text": "Anything also can.. u taking bus back to interchange?",
+      "model_input": "Anything also can.. u taking bus back to interchange?",
+      "score": 0.004217476990179818,
+      "prediction": "ham"
+    }
+  ],
+  "scope": "Training and synthetic inputs only; C inputs are already normalized for pure classifier math parity."
+}
